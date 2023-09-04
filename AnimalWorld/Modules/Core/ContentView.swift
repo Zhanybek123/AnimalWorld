@@ -23,13 +23,11 @@ struct ContentView: View {
                         .ignoresSafeArea()
                     ScrollView(.vertical) {
                         LazyVGrid(columns: colomns) {
-                            ForEach(animalsViewModel.animals, id: \.id) { animal in
-                                VStack {
-                                    Image(animal.fileName)
-                                        .resizable()
-                                        .frame(width: geo.size.width / 4.3, height: 90)      .padding(10)
-                                    Text(animal.name)
-                                        .foregroundColor(Color.black)
+                            ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
+                                NavigationLink(destination:
+                                                AnimalDetailView(animalIndexPath: index, animalType: animal.fileName))
+                                {
+                                    AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4.5, imageHeight: geo.size.height / 7)
                                 }
                             }
                         }                    }
@@ -41,7 +39,7 @@ struct ContentView: View {
                                 .accessibilityAddTraits(.isHeader)
                         }
                     }
-                    .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+                    .padding(EdgeInsets(top: 16, leading: 8, bottom: 8, trailing: 8))
                 }
             }
         }
@@ -56,4 +54,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environmentObject(AnimalsViewModel(dataService: AnimalsDataService()))
     }
 }
+
+
 

@@ -7,8 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D873C2B32A81AC0D00E30935 /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B22A81AC0D00E30935 /* AnimalsData.swift */; };
+		D873C2B32A81AC0D00E30935 /* AnimalsTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */; };
 		D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */; };
+		D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */; };
+		D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2BB2A84454700E30935 /* AnimalItemView.swift */; };
+		D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB82AA50A3B006A6FA1 /* Lion.wav */; };
+		D89CBCD52AA50A3E006A6FA1 /* Moose.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB92AA50A3B006A6FA1 /* Moose.wav */; };
+		D89CBCD62AA50A3E006A6FA1 /* Duck.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */; };
+		D89CBCD72AA50A3E006A6FA1 /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBB2AA50A3B006A6FA1 /* Cat.wav */; };
+		D89CBCD82AA50A3E006A6FA1 /* Crocodile.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBC2AA50A3B006A6FA1 /* Crocodile.wav */; };
+		D89CBCD92AA50A3E006A6FA1 /* Owl.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBD2AA50A3B006A6FA1 /* Owl.wav */; };
+		D89CBCDA2AA50A3E006A6FA1 /* Monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBE2AA50A3B006A6FA1 /* Monkey.wav */; };
+		D89CBCDB2AA50A3E006A6FA1 /* Snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBF2AA50A3C006A6FA1 /* Snake.wav */; };
+		D89CBCDC2AA50A3E006A6FA1 /* Cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC02AA50A3C006A6FA1 /* Cow.wav */; };
+		D89CBCDD2AA50A3E006A6FA1 /* Fox.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC12AA50A3C006A6FA1 /* Fox.wav */; };
+		D89CBCDE2AA50A3E006A6FA1 /* Raccoon.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC22AA50A3C006A6FA1 /* Raccoon.wav */; };
+		D89CBCDF2AA50A3E006A6FA1 /* Chicken.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC32AA50A3C006A6FA1 /* Chicken.wav */; };
+		D89CBCE02AA50A3E006A6FA1 /* Leopard.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC42AA50A3C006A6FA1 /* Leopard.wav */; };
+		D89CBCE12AA50A3E006A6FA1 /* Wolf.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC52AA50A3C006A6FA1 /* Wolf.wav */; };
+		D89CBCE22AA50A3E006A6FA1 /* Eagle.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC62AA50A3C006A6FA1 /* Eagle.wav */; };
+		D89CBCE32AA50A3E006A6FA1 /* Squirrel.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC72AA50A3D006A6FA1 /* Squirrel.wav */; };
+		D89CBCE42AA50A3E006A6FA1 /* Zebra.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC82AA50A3D006A6FA1 /* Zebra.wav */; };
+		D89CBCE52AA50A3E006A6FA1 /* Buffalo.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCC92AA50A3D006A6FA1 /* Buffalo.wav */; };
+		D89CBCE62AA50A3E006A6FA1 /* Bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCA2AA50A3D006A6FA1 /* Bear.wav */; };
+		D89CBCE72AA50A3E006A6FA1 /* Horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCB2AA50A3D006A6FA1 /* Horse.wav */; };
+		D89CBCE82AA50A3E006A6FA1 /* Tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCC2AA50A3E006A6FA1 /* Tiger.wav */; };
+		D89CBCE92AA50A3E006A6FA1 /* Dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCD2AA50A3E006A6FA1 /* Dog.wav */; };
+		D89CBCEA2AA50A3E006A6FA1 /* Pinguin.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCE2AA50A3E006A6FA1 /* Pinguin.wav */; };
+		D89CBCEB2AA50A3E006A6FA1 /* Pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCCF2AA50A3E006A6FA1 /* Pig.wav */; };
+		D89CBCEC2AA50A3E006A6FA1 /* Gorilla.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD02AA50A3E006A6FA1 /* Gorilla.wav */; };
+		D89CBCED2AA50A3E006A6FA1 /* Hippo.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD12AA50A3E006A6FA1 /* Hippo.wav */; };
+		D89CBCEE2AA50A3E006A6FA1 /* Sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD22AA50A3E006A6FA1 /* Sheep.wav */; };
+		D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */; };
+		D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */; };
 		D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */; };
 		D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0695B2A781D9100A150B7 /* ContentView.swift */; };
 		D8E0695E2A781D9400A150B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E0695D2A781D9400A150B7 /* Assets.xcassets */; };
@@ -17,8 +48,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D873C2B22A81AC0D00E30935 /* AnimalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsData.swift; sourceTree = "<group>"; };
+		D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTypeData.swift; sourceTree = "<group>"; };
 		D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
+		D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		D873C2BB2A84454700E30935 /* AnimalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalItemView.swift; sourceTree = "<group>"; };
+		D89CBCB82AA50A3B006A6FA1 /* Lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lion.wav; sourceTree = "<group>"; };
+		D89CBCB92AA50A3B006A6FA1 /* Moose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Moose.wav; sourceTree = "<group>"; };
+		D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Duck.wav; sourceTree = "<group>"; };
+		D89CBCBB2AA50A3B006A6FA1 /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cat.wav; sourceTree = "<group>"; };
+		D89CBCBC2AA50A3B006A6FA1 /* Crocodile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Crocodile.wav; sourceTree = "<group>"; };
+		D89CBCBD2AA50A3B006A6FA1 /* Owl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Owl.wav; sourceTree = "<group>"; };
+		D89CBCBE2AA50A3B006A6FA1 /* Monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Monkey.wav; sourceTree = "<group>"; };
+		D89CBCBF2AA50A3C006A6FA1 /* Snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snake.wav; sourceTree = "<group>"; };
+		D89CBCC02AA50A3C006A6FA1 /* Cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cow.wav; sourceTree = "<group>"; };
+		D89CBCC12AA50A3C006A6FA1 /* Fox.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fox.wav; sourceTree = "<group>"; };
+		D89CBCC22AA50A3C006A6FA1 /* Raccoon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Raccoon.wav; sourceTree = "<group>"; };
+		D89CBCC32AA50A3C006A6FA1 /* Chicken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chicken.wav; sourceTree = "<group>"; };
+		D89CBCC42AA50A3C006A6FA1 /* Leopard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Leopard.wav; sourceTree = "<group>"; };
+		D89CBCC52AA50A3C006A6FA1 /* Wolf.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wolf.wav; sourceTree = "<group>"; };
+		D89CBCC62AA50A3C006A6FA1 /* Eagle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Eagle.wav; sourceTree = "<group>"; };
+		D89CBCC72AA50A3D006A6FA1 /* Squirrel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Squirrel.wav; sourceTree = "<group>"; };
+		D89CBCC82AA50A3D006A6FA1 /* Zebra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Zebra.wav; sourceTree = "<group>"; };
+		D89CBCC92AA50A3D006A6FA1 /* Buffalo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Buffalo.wav; sourceTree = "<group>"; };
+		D89CBCCA2AA50A3D006A6FA1 /* Bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bear.wav; sourceTree = "<group>"; };
+		D89CBCCB2AA50A3D006A6FA1 /* Horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Horse.wav; sourceTree = "<group>"; };
+		D89CBCCC2AA50A3E006A6FA1 /* Tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tiger.wav; sourceTree = "<group>"; };
+		D89CBCCD2AA50A3E006A6FA1 /* Dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dog.wav; sourceTree = "<group>"; };
+		D89CBCCE2AA50A3E006A6FA1 /* Pinguin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pinguin.wav; sourceTree = "<group>"; };
+		D89CBCCF2AA50A3E006A6FA1 /* Pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pig.wav; sourceTree = "<group>"; };
+		D89CBCD02AA50A3E006A6FA1 /* Gorilla.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gorilla.wav; sourceTree = "<group>"; };
+		D89CBCD12AA50A3E006A6FA1 /* Hippo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hippo.wav; sourceTree = "<group>"; };
+		D89CBCD22AA50A3E006A6FA1 /* Sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sheep.wav; sourceTree = "<group>"; };
+		D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Elephant.wav; sourceTree = "<group>"; };
+		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D8E069562A781D9100A150B7 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWorldApp.swift; sourceTree = "<group>"; };
 		D8E0695B2A781D9100A150B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,24 +104,80 @@
 		D873C2B12A81ABFB00E30935 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D873C2B22A81AC0D00E30935 /* AnimalsData.swift */,
+				D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		D873C2B62A81B50A00E30935 /* AnimalsViewModel */ = {
+		D873C2B72A843E2800E30935 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8E0695B2A781D9100A150B7 /* ContentView.swift */,
 				D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */,
+				D873C2B82A843E3C00E30935 /* DetailViews */,
 			);
-			path = AnimalsViewModel;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D873C2B82A843E3C00E30935 /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				D873C2BB2A84454700E30935 /* AnimalItemView.swift */,
+				D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D89CBCCA2AA50A3D006A6FA1 /* Bear.wav */,
+				D89CBCC92AA50A3D006A6FA1 /* Buffalo.wav */,
+				D89CBCBB2AA50A3B006A6FA1 /* Cat.wav */,
+				D89CBCC32AA50A3C006A6FA1 /* Chicken.wav */,
+				D89CBCC02AA50A3C006A6FA1 /* Cow.wav */,
+				D89CBCBC2AA50A3B006A6FA1 /* Crocodile.wav */,
+				D89CBCCD2AA50A3E006A6FA1 /* Dog.wav */,
+				D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */,
+				D89CBCC62AA50A3C006A6FA1 /* Eagle.wav */,
+				D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */,
+				D89CBCC12AA50A3C006A6FA1 /* Fox.wav */,
+				D89CBCD02AA50A3E006A6FA1 /* Gorilla.wav */,
+				D89CBCD12AA50A3E006A6FA1 /* Hippo.wav */,
+				D89CBCCB2AA50A3D006A6FA1 /* Horse.wav */,
+				D89CBCC42AA50A3C006A6FA1 /* Leopard.wav */,
+				D89CBCB82AA50A3B006A6FA1 /* Lion.wav */,
+				D89CBCBE2AA50A3B006A6FA1 /* Monkey.wav */,
+				D89CBCB92AA50A3B006A6FA1 /* Moose.wav */,
+				D89CBCBD2AA50A3B006A6FA1 /* Owl.wav */,
+				D89CBCCF2AA50A3E006A6FA1 /* Pig.wav */,
+				D89CBCCE2AA50A3E006A6FA1 /* Pinguin.wav */,
+				D89CBCC22AA50A3C006A6FA1 /* Raccoon.wav */,
+				D89CBCD22AA50A3E006A6FA1 /* Sheep.wav */,
+				D89CBCBF2AA50A3C006A6FA1 /* Snake.wav */,
+				D89CBCC72AA50A3D006A6FA1 /* Squirrel.wav */,
+				D89CBCCC2AA50A3E006A6FA1 /* Tiger.wav */,
+				D89CBCC52AA50A3C006A6FA1 /* Wolf.wav */,
+				D89CBCC82AA50A3D006A6FA1 /* Zebra.wav */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D89CBCF02AA50ABA006A6FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D8E0694D2A781D9100A150B7 = {
 			isa = PBXGroup;
 			children = (
 				D8E069582A781D9100A150B7 /* AnimalWorld */,
+				D89CBC352AA509B0006A6FA1 /* SupportingFiles */,
 				D8E069572A781D9100A150B7 /* Products */,
+				D89CBCF02AA50ABA006A6FA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +195,7 @@
 				D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */,
 				D873C2B12A81ABFB00E30935 /* Managers */,
 				D8E069672A781DF600A150B7 /* Moldels */,
-				D8E0696A2A78206700A150B7 /* Views */,
-				D873C2B62A81B50A00E30935 /* AnimalsViewModel */,
+				D8E0696A2A78206700A150B7 /* Modules */,
 				D8E0695D2A781D9400A150B7 /* Assets.xcassets */,
 				D8E0695F2A781D9400A150B7 /* Preview Content */,
 			);
@@ -100,12 +218,12 @@
 			path = Moldels;
 			sourceTree = "<group>";
 		};
-		D8E0696A2A78206700A150B7 /* Views */ = {
+		D8E0696A2A78206700A150B7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D8E0695B2A781D9100A150B7 /* ContentView.swift */,
+				D873C2B72A843E2800E30935 /* Core */,
 			);
-			path = Views;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +284,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89CBCE72AA50A3E006A6FA1 /* Horse.wav in Resources */,
+				D89CBCEB2AA50A3E006A6FA1 /* Pig.wav in Resources */,
 				D8E069612A781D9400A150B7 /* Preview Assets.xcassets in Resources */,
+				D89CBCED2AA50A3E006A6FA1 /* Hippo.wav in Resources */,
+				D89CBCE32AA50A3E006A6FA1 /* Squirrel.wav in Resources */,
+				D89CBCD62AA50A3E006A6FA1 /* Duck.wav in Resources */,
+				D89CBCD72AA50A3E006A6FA1 /* Cat.wav in Resources */,
+				D89CBCD52AA50A3E006A6FA1 /* Moose.wav in Resources */,
+				D89CBCD82AA50A3E006A6FA1 /* Crocodile.wav in Resources */,
+				D89CBCE42AA50A3E006A6FA1 /* Zebra.wav in Resources */,
+				D89CBCEA2AA50A3E006A6FA1 /* Pinguin.wav in Resources */,
 				D8E0695E2A781D9400A150B7 /* Assets.xcassets in Resources */,
+				D89CBCE62AA50A3E006A6FA1 /* Bear.wav in Resources */,
+				D89CBCE22AA50A3E006A6FA1 /* Eagle.wav in Resources */,
+				D89CBCEC2AA50A3E006A6FA1 /* Gorilla.wav in Resources */,
+				D89CBCDD2AA50A3E006A6FA1 /* Fox.wav in Resources */,
+				D89CBCE02AA50A3E006A6FA1 /* Leopard.wav in Resources */,
+				D89CBCDB2AA50A3E006A6FA1 /* Snake.wav in Resources */,
+				D89CBCEE2AA50A3E006A6FA1 /* Sheep.wav in Resources */,
+				D89CBCE82AA50A3E006A6FA1 /* Tiger.wav in Resources */,
+				D89CBCDE2AA50A3E006A6FA1 /* Raccoon.wav in Resources */,
+				D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */,
+				D89CBCDF2AA50A3E006A6FA1 /* Chicken.wav in Resources */,
+				D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */,
+				D89CBCDA2AA50A3E006A6FA1 /* Monkey.wav in Resources */,
+				D89CBCE92AA50A3E006A6FA1 /* Dog.wav in Resources */,
+				D89CBCE52AA50A3E006A6FA1 /* Buffalo.wav in Resources */,
+				D89CBCD92AA50A3E006A6FA1 /* Owl.wav in Resources */,
+				D89CBCE12AA50A3E006A6FA1 /* Wolf.wav in Resources */,
+				D89CBCDC2AA50A3E006A6FA1 /* Cow.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +327,10 @@
 				D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */,
 				D8E069692A781E0F00A150B7 /* AnimalModel .swift in Sources */,
 				D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */,
-				D873C2B32A81AC0D00E30935 /* AnimalsData.swift in Sources */,
+				D873C2B32A81AC0D00E30935 /* AnimalsTypeData.swift in Sources */,
+				D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */,
 				D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */,
+				D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
