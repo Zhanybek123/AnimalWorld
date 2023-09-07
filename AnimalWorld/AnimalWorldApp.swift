@@ -12,7 +12,7 @@ struct AnimalWorldApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(AnimalsViewModel(dataService: AnimalsDataService()))
+            ContentView().environmentObject(AnimalsViewModel(dataService: AnimalsDataService(), animalSoundService: AnimalSoundEffectService()))
         }
     }
 }

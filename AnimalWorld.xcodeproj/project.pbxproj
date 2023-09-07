@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D873C2B32A81AC0D00E30935 /* AnimalsTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */; };
+		D873C2B32A81AC0D00E30935 /* AnimalsTypeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B22A81AC0D00E30935 /* AnimalsTypeDataService.swift */; };
 		D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */; };
 		D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */; };
 		D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2BB2A84454700E30935 /* AnimalItemView.swift */; };
@@ -40,6 +40,7 @@
 		D89CBCEE2AA50A3E006A6FA1 /* Sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD22AA50A3E006A6FA1 /* Sheep.wav */; };
 		D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */; };
 		D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */; };
+		D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */; };
 		D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */; };
 		D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0695B2A781D9100A150B7 /* ContentView.swift */; };
 		D8E0695E2A781D9400A150B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E0695D2A781D9400A150B7 /* Assets.xcassets */; };
@@ -48,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTypeData.swift; sourceTree = "<group>"; };
+		D873C2B22A81AC0D00E30935 /* AnimalsTypeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTypeDataService.swift; sourceTree = "<group>"; };
 		D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
 		D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		D873C2BB2A84454700E30935 /* AnimalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalItemView.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		D89CBCD22AA50A3E006A6FA1 /* Sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sheep.wav; sourceTree = "<group>"; };
 		D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Elephant.wav; sourceTree = "<group>"; };
 		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalSoundEffectService .swift"; sourceTree = "<group>"; };
 		D8E069562A781D9100A150B7 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWorldApp.swift; sourceTree = "<group>"; };
 		D8E0695B2A781D9100A150B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 		D873C2B12A81ABFB00E30935 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D873C2B22A81AC0D00E30935 /* AnimalsTypeData.swift */,
+				D873C2B22A81AC0D00E30935 /* AnimalsTypeDataService.swift */,
+				D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -327,7 +330,8 @@
 				D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */,
 				D8E069692A781E0F00A150B7 /* AnimalModel .swift in Sources */,
 				D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */,
-				D873C2B32A81AC0D00E30935 /* AnimalsTypeData.swift in Sources */,
+				D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */,
+				D873C2B32A81AC0D00E30935 /* AnimalsTypeDataService.swift in Sources */,
 				D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */,
 				D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */,
 				D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */,

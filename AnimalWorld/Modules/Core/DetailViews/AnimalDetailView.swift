@@ -32,7 +32,7 @@ struct AnimalDetailView: View {
                         .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height / Layout.imageHeight)
                         .onTapGesture {
                             print(animalType)
-                            animalViewModel.playAnimalSound(of: animalType)
+                            animalViewModel.animalSoundService.playAnimalSound(of: animalType)
                         }
                     .padding()
                     Text(animalViewModel.animals[animalIndexPath].name )
