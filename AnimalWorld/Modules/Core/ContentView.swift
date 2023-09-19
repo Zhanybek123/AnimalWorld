@@ -11,8 +11,6 @@ struct ContentView: View {
     
     @EnvironmentObject var animalsViewModel: AnimalsViewModel
     
-    let defaultAnimal = Animal(type: "Mammal", fileName: "Cat", name: "Cat")
-    
     let colomns = [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)]
     
     var body: some View {
@@ -25,7 +23,8 @@ struct ContentView: View {
                         LazyVGrid(columns: colomns) {
                             ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
                                 NavigationLink(destination:
-                                                AnimalDetailView(animalIndexPath: index, animalType: animal.fileName))
+                                                AnimalDetailView(youtubeVideoView: VideoView(youTubePlayer: "https://youtube.com/watch?v=lOCSDw_vby8"), animalIndexPath: index,
+                                                                 animalType: animal.fileName))
                                 {
                                     AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4.5, imageHeight: geo.size.height / 7)
                                 }

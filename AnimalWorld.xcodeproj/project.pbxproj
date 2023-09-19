@@ -41,6 +41,8 @@
 		D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */; };
 		D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */; };
 		D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */; };
+		D8AAABB12AB9F2D100452B8A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAABB02AB9F2D100452B8A /* VideoView.swift */; };
+		D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */; };
 		D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */; };
 		D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0695B2A781D9100A150B7 /* ContentView.swift */; };
 		D8E0695E2A781D9400A150B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E0695D2A781D9400A150B7 /* Assets.xcassets */; };
@@ -83,6 +85,7 @@
 		D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Elephant.wav; sourceTree = "<group>"; };
 		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalSoundEffectService .swift"; sourceTree = "<group>"; };
+		D8AAABB02AB9F2D100452B8A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		D8E069562A781D9100A150B7 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWorldApp.swift; sourceTree = "<group>"; };
 		D8E0695B2A781D9100A150B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */,
 				D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,18 +121,19 @@
 			children = (
 				D8E0695B2A781D9100A150B7 /* ContentView.swift */,
 				D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */,
-				D873C2B82A843E3C00E30935 /* DetailViews */,
+				D873C2B82A843E3C00E30935 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		D873C2B82A843E3C00E30935 /* DetailViews */ = {
+		D873C2B82A843E3C00E30935 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D873C2BB2A84454700E30935 /* AnimalItemView.swift */,
 				D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */,
+				D873C2BB2A84454700E30935 /* AnimalItemView.swift */,
+				D8AAABB02AB9F2D100452B8A /* VideoView.swift */,
 			);
-			path = DetailViews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
@@ -245,6 +250,9 @@
 			dependencies = (
 			);
 			name = AnimalWorld;
+			packageProductDependencies = (
+				D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */,
+			);
 			productName = AnimalWorld;
 			productReference = D8E069562A781D9100A150B7 /* AnimalWorld.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +281,9 @@
 				Base,
 			);
 			mainGroup = D8E0694D2A781D9100A150B7;
+			packageReferences = (
+				D8AAABB22AB9FB3300452B8A /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = D8E069572A781D9100A150B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +344,7 @@
 				D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */,
 				D873C2B32A81AC0D00E30935 /* AnimalsTypeDataService.swift in Sources */,
 				D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */,
+				D8AAABB12AB9F2D100452B8A /* VideoView.swift in Sources */,
 				D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */,
 				D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */,
 			);
@@ -535,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8AAABB22AB9FB3300452B8A /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8AAABB22AB9FB3300452B8A /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8E0694E2A781D9100A150B7 /* Project object */;
 }
