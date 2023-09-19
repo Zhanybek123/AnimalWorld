@@ -13,4 +13,5 @@ struct Animal: Hashable, Identifiable {
     let type: String
     let fileName: String
     let name: String
+    let sourceID: String
 }

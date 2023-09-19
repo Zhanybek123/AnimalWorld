@@ -19,8 +19,6 @@ struct AnimalDetailView: View {
     
     @EnvironmentObject var animalViewModel: AnimalsViewModel
     var youtubeVideoView: VideoView
-    
-//    let videoSource: YouTubePlayer.Source = .video(id: "lOCSDw_vby8")
     var animalIndexPath: Int
     var animalType: String
     
@@ -57,6 +55,6 @@ struct AnimalDetailView: View {
 
 struct AnimalDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalDetailView(youtubeVideoView: VideoView(youTubePlayer: "https://youtube.com/watch?v=psL_5RIBqnY"), animalIndexPath: 1, animalType: "Dog")
+        AnimalDetailView(youtubeVideoView: VideoView(stringID: "psL_5RIBqnY"), animalIndexPath: 1, animalType: "Dog")
     }
 }

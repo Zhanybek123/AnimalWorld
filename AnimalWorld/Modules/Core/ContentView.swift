@@ -23,7 +23,7 @@ struct ContentView: View {
                         LazyVGrid(columns: colomns) {
                             ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
                                 NavigationLink(destination:
-                                                AnimalDetailView(youtubeVideoView: VideoView(youTubePlayer: "https://youtube.com/watch?v=lOCSDw_vby8"), animalIndexPath: index,
+                                                AnimalDetailView(youtubeVideoView: VideoView(stringID: "33_1arqK0Dk"), animalIndexPath: index,
                                                                  animalType: animal.fileName))
                                 {
                                     AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4.5, imageHeight: geo.size.height / 7)
