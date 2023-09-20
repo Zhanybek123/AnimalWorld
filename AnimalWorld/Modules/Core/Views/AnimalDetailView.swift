@@ -25,30 +25,32 @@ struct AnimalDetailView: View {
     
     var body: some View {
         GeometryReader { geo in
-            Color(.cyan)
+            Color(.systemBlue)
                 .ignoresSafeArea()
             ScrollView{
-                HStack(alignment: .center) {
-                    VStack(alignment: .center) {
-                        Image(animalViewModel.animals[animalIndexPath].fileName )
-                            .resizable()
-                            .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height / Layout.imageHeight)
-                            .onTapGesture {
-                                print(animalType)
-                                animalViewModel.animalSoundService.playAnimalSound(of: animalType)
-                            }
-                        .padding()
-                        Text(animalViewModel.animals[animalIndexPath].name )
-                        
-                        youtubeVideoView
-                            .frame(width: geo.size.width, height: 300, alignment: .leading)
-                    }
+                Spacer()
+                VStack{
+                    Image(animalViewModel.animals[animalIndexPath].fileName )
+                        .resizable()
+                        .scaledToFit()
+                        .imageScale(.large)
+                        .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height / Layout.imageHeight)
+                        .onTapGesture {
+                            print(animalType)
+                            animalViewModel.animalSoundService.playAnimalSound(of: animalType)
+                        }
+                    
+                    Text(animalViewModel.animals[animalIndexPath].name )
+                        .fixedSize()
+                        .font(.custom("TrainLetters-Demo", size: 60))
+                        .frame(width: geo.size.width, height: 20)
+                        .padding(.top, 10)
+                    
+                    youtubeVideoView
+                        .frame(width: geo.size.width - 4, height: 300)
+                        .padding(EdgeInsets(top: 16, leading: 4, bottom: 8, trailing: -4))
                 }
             }
-            
-        }
-        .onAppear {
-            let _: YouTubePlayer.Source = .video(id: "psL_5RIBqnY")
         }
     }
 }

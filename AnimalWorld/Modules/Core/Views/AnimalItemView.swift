@@ -11,15 +11,18 @@ struct AnimalItemView: View {
     
     @EnvironmentObject var viewModel: AnimalsViewModel
     var animalIndex: Int
-    var imageWidth: Double = 40
-    var imageHeight: Double = 40
+    var imageWidth: CGFloat?
+    var imageHeight: CGFloat?
     
     var body: some View { 
             VStack {
                 Image(viewModel.animals[animalIndex].fileName)
                     .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth, height: imageHeight)
+                
                 Text(viewModel.animals[animalIndex].name)
+                    .font(.custom("King Kids", size: 25))
                     .foregroundColor(Color.black)
             }
     }

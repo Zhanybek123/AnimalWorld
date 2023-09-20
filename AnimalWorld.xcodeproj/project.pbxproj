@@ -43,6 +43,8 @@
 		D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */; };
 		D8AAABB12AB9F2D100452B8A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAABB02AB9F2D100452B8A /* VideoView.swift */; };
 		D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */; };
+		D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */; };
+		D8AAABC62ABBA77800452B8A /* King Kids.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8AAABC52ABBA77800452B8A /* King Kids.otf */; };
 		D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */; };
 		D8E0695C2A781D9100A150B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0695B2A781D9100A150B7 /* ContentView.swift */; };
 		D8E0695E2A781D9400A150B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E0695D2A781D9400A150B7 /* Assets.xcassets */; };
@@ -86,6 +88,9 @@
 		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalSoundEffectService .swift"; sourceTree = "<group>"; };
 		D8AAABB02AB9F2D100452B8A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrainLetters-Demo.ttf"; sourceTree = "<group>"; };
+		D8AAABC42ABBA39500452B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8AAABC52ABBA77800452B8A /* King Kids.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "King Kids.otf"; sourceTree = "<group>"; };
 		D8E069562A781D9100A150B7 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWorldApp.swift; sourceTree = "<group>"; };
 		D8E0695B2A781D9100A150B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,10 +184,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D8AAABBD2ABBA2F800452B8A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */,
+				D8AAABC52ABBA77800452B8A /* King Kids.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D8E0694D2A781D9100A150B7 = {
 			isa = PBXGroup;
 			children = (
 				D8E069582A781D9100A150B7 /* AnimalWorld */,
+				D8AAABBD2ABBA2F800452B8A /* Fonts */,
 				D89CBC352AA509B0006A6FA1 /* SupportingFiles */,
 				D8E069572A781D9100A150B7 /* Products */,
 				D89CBCF02AA50ABA006A6FA1 /* Frameworks */,
@@ -200,6 +215,7 @@
 		D8E069582A781D9100A150B7 /* AnimalWorld */ = {
 			isa = PBXGroup;
 			children = (
+				D8AAABC42ABBA39500452B8A /* Info.plist */,
 				D8E069592A781D9100A150B7 /* AnimalWorldApp.swift */,
 				D873C2B12A81ABFB00E30935 /* Managers */,
 				D8E069672A781DF600A150B7 /* Moldels */,
@@ -319,8 +335,10 @@
 				D89CBCEE2AA50A3E006A6FA1 /* Sheep.wav in Resources */,
 				D89CBCE82AA50A3E006A6FA1 /* Tiger.wav in Resources */,
 				D89CBCDE2AA50A3E006A6FA1 /* Raccoon.wav in Resources */,
+				D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */,
 				D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */,
 				D89CBCDF2AA50A3E006A6FA1 /* Chicken.wav in Resources */,
+				D8AAABC62ABBA77800452B8A /* King Kids.otf in Resources */,
 				D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */,
 				D89CBCDA2AA50A3E006A6FA1 /* Monkey.wav in Resources */,
 				D89CBCE92AA50A3E006A6FA1 /* Dog.wav in Resources */,
@@ -478,6 +496,7 @@
 				DEVELOPMENT_TEAM = 9KLKLA3BF5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimalWorld/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,6 +526,7 @@
 				DEVELOPMENT_TEAM = 9KLKLA3BF5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimalWorld/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

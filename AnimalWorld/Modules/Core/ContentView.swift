@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var animalsViewModel: AnimalsViewModel
-    
     let colomns = [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)]
     
     var body: some View {
@@ -23,10 +22,10 @@ struct ContentView: View {
                         LazyVGrid(columns: colomns) {
                             ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
                                 NavigationLink(destination:
-                                                AnimalDetailView(youtubeVideoView: VideoView(stringID: "33_1arqK0Dk"), animalIndexPath: index,
+                                                AnimalDetailView(youtubeVideoView: VideoView(stringID: animal.sourceID), animalIndexPath: index,
                                                                  animalType: animal.fileName))
                                 {
-                                    AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4.5, imageHeight: geo.size.height / 7)
+                                    AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4, imageHeight: geo.size.height / 7)
                                 }
                             }
                         }                    }
@@ -53,6 +52,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environmentObject(AnimalsViewModel(dataService: AnimalsDataService(), animalSoundService: AnimalSoundEffectService()))
     }
 }
-
-
-

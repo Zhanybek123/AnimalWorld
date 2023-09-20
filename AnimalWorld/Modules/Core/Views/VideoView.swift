@@ -14,20 +14,17 @@ struct VideoView: View {
     
     var body: some View {
         
-        YouTubePlayerView(YouTubePlayer(source: .video(id: stringID))) { state in
-            // Overlay ViewBuilder closure to place an overlay View
-            // for the current `YouTubePlayer.State`
-            switch state {
-            case .idle:
-                ProgressView()
-            case .ready:
-                EmptyView()
-            case .error(let error):
-                Text(verbatim: stringID)
+        VStack(alignment: .center) {
+            YouTubePlayerView(YouTubePlayer(source: .video(id: stringID))) { state in
+                switch state {
+                case .idle:
+                    ProgressView()
+                case .ready:
+                    EmptyView()
+                case .error(let error):
+                    Text(verbatim: "failed to fetch data from Youtube API")
+                }
             }
-        }
-        .onAppear{
-//            YouTubePlayer(source: .video(id: stringID))
         }
     }
 }
