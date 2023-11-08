@@ -40,20 +40,18 @@ struct AnimalDetailView: View {
                         .imageScale(.large)
                         .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height / Layout.imageHeight)
                         .scaleEffect(scaleFactor)
-                        .animation(.easeInOut(duration: 1.0))
+                        .animation(.easeInOut(duration: 1.0), value: scaleFactor)
                         .onTapGesture {
-                            animalIsDesaibled = true
+                            self.animalIsDesaibled = true
+                            self.isScaled = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                                 animalIsDesaibled = false
                             }
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                 self.isScaled = false
                             }
-                            withAnimation {
-                                self.isScaled = true
-                                print(animalType)
-                                animalViewModel.animalSoundService.playAnimalSound(of: animalType)
-                            }
+                            animalViewModel.animalSoundService.playAnimalSound(of: animalType)
+                            print(animalType)
                         }
                         .disabled(animalIsDesaibled)
                     

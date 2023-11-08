@@ -40,6 +40,7 @@ struct AnimalCatalogView: View {
                     .padding(EdgeInsets(top: 16, leading: 8, bottom: 8, trailing: 8))
                 }
             }
+            .tint(.black)
         }
         .onAppear {
             animalsViewModel.fetchData()
