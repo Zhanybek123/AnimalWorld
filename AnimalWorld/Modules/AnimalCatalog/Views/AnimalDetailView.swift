@@ -20,9 +20,8 @@ struct AnimalDetailView: View {
     @EnvironmentObject var animalViewModel: AnimalsViewModel
     var animalIndexPath: Int
     var animalType: String
-    @State var animationOn = false
     @State private var isScaled = false
-    @State var animalIsDesaibled = false
+    @State var screenIsDesabled = false
     
     
     var body: some View {
@@ -34,7 +33,7 @@ struct AnimalDetailView: View {
                 .ignoresSafeArea()
             ScrollView{
                 VStack{
-                    Image(animalViewModel.animals[animalIndexPath].fileName )
+                    Image(animalViewModel.animals[animalIndexPath].fileName)
                         .resizable()
                         .scaledToFit()
                         .imageScale(.large)
@@ -42,18 +41,21 @@ struct AnimalDetailView: View {
                         .scaleEffect(scaleFactor)
                         .animation(.easeInOut(duration: 1.0), value: scaleFactor)
                         .onTapGesture {
-                            self.animalIsDesaibled = true
-                            self.isScaled = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                                animalIsDesaibled = false
+                            if !screenIsDesabled {
+                                self.screenIsDesabled = true
+                                self.isScaled = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
+                                    screenIsDesabled = false
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    self.isScaled = false
+                                }
+                                animalViewModel.animalSoundService.playAnimalSound(of: animalType)
+                                print(animalType)
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                self.isScaled = false
-                            }
-                            animalViewModel.animalSoundService.playAnimalSound(of: animalType)
-                            print(animalType)
+                            
                         }
-                        .disabled(animalIsDesaibled)
+                        .disabled(screenIsDesabled)
                     
                     Text(animalViewModel.animals[animalIndexPath].name )
                         .fixedSize()
@@ -82,26 +84,5 @@ struct AnimalDetailView: View {
 struct AnimalDetailView_Previews: PreviewProvider {
     static var previews: some View {
         AnimalDetailView(animalIndexPath: 1, animalType: "Dog")
-    }
-}
-
-extension View {
-    func animateRotation(animationEnabled: Binding<Bool>) -> some View {
-        self.modifier(RotationAnimation(isAnimated: animationEnabled))
-    }
-}
-
-struct RotationAnimation: ViewModifier {
-    @Binding var isAnimated: Bool
-    
-    func body(content: Content) -> some View {
-        content
-            .rotationEffect(.degrees(isAnimated ? 45 : -45))
-            .animation(Animation.interpolatingSpring(stiffness: 170, damping: 1000).speed(3.5).repeatForever(autoreverses: true))
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    self.isAnimated = false
-                }
-            }
     }
 }
