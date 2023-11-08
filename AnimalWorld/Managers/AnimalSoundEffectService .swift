@@ -5,16 +5,20 @@
 //  Created by zhanybek salgarin on 9/6/23.
 //
 
+import Foundation
+import AVFoundation
+
 protocol AnimalSoundEffectProtocol {
     mutating func playAnimalSound(of animal: String)
 }
 
-import Foundation
-import AVFoundation
-
 struct AnimalSoundEffectService: AnimalSoundEffectProtocol{
     
-    private var animalSoundPlayer: AVAudioPlayer?
+    var animalSoundPlayer: AVAudioPlayer?
+    
+    init(animalSoundPlayer: AVAudioPlayer? = nil) {
+        self.animalSoundPlayer = animalSoundPlayer
+    }
     
     mutating func playAnimalSound(of animal: String) {
         if let path = Bundle.main.path(forResource: animal, ofType: "wav") {

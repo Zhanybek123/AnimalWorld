@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 @main
 struct AnimalWorldApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AnimalCatalogView().environmentObject(AnimalsViewModel(dataService: AnimalsDataService(), animalSoundService: AnimalSoundEffectService()))
+            let dataService = AnimalsDataService()
+            let soundServise = AnimalSoundEffectService()
+            let animalsViewModel = AnimalsViewModel(dataService: dataService,
+                                                    animalSoundService: soundServise)
+            AnimalCatalogView().environmentObject(animalsViewModel)
         }
     }
 }
