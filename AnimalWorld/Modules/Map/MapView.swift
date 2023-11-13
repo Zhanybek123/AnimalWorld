@@ -10,29 +10,20 @@ import MapKit
 
 struct ContentView: View {
     
-    @State var locations: [Location] = [
-//        Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),
-//        Location(title: "New York", latitude: 40.7128, longitude: -74.0060)
-    ]
-    
-    var mock = [
-        Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),
-        Location(title: "New York", latitude: 40.7128, longitude: -74.0060)
-    ]
-    var mock2 = [
+   @State var mock2 = [
         LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)),
         LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060))
     ]
     
-    
     var body: some View {
-            MapView(/*locations: mock2*/)
+        MapView(animalLandmarks: mock2)
                 .ignoresSafeArea()
     }
 }
 
 struct MapView: UIViewRepresentable {
-    //Model with test data
+    
+    @State var animalLandmarks: [LandmarkAnnotation]
     let landmarks = [LandmarkAnnotation(
         title: "San Francisco",
         subtitle: "City",
@@ -58,7 +49,7 @@ struct MapView: UIViewRepresentable {
         view.removeAnnotations(view.annotations)
         //passing model array here
         
-        for landmark in landmarks {
+        for landmark in animalLandmarks {
             view.addAnnotation(landmark)
         }
         view.delegate = context.coordinator
@@ -103,7 +94,7 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
         
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         // Custom View for Annotation
-        var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
+        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
         annotationView.canShowCallout = true
 
         // Your custom image icon
@@ -114,6 +105,8 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
     }
 }
 
+
+// Custom extension for UIImage(systemName: ) tint color change
 extension UIImage {
     func tinted(with color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
