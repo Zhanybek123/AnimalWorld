@@ -27,7 +27,6 @@ struct AnimalDetailView: View {
     var body: some View {
         let scaleFactor: CGFloat = isScaled ? 1.5 : 1
         
-        
         GeometryReader { geo in
             Color(.systemBlue)
                 .ignoresSafeArea()

@@ -14,10 +14,9 @@ struct AnimalCatalogView: View {
     
     var body: some View {
         GeometryReader { geo in
-            NavigationView {
+            NavigationStack {
                 ZStack {
-                    Color.accentColor
-                        .ignoresSafeArea()
+                    Color.accentColor.ignoresSafeArea()
                     ScrollView(.vertical) {
                         LazyVGrid(columns: colomns) {
                             ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
@@ -25,10 +24,11 @@ struct AnimalCatalogView: View {
                                                 AnimalDetailView(animalIndexPath: index,
                                                                  animalType: animal.fileName))
                                 {
-                                    AnimalItemView(animalIndex: index, imageWidth: geo.size.width / 4, imageHeight: geo.size.height / 7)
+                                    AnimalItemView(animalIndex: index)
                                 }
                             }
-                        }                    }
+                        }    
+                    }
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .principal) {
@@ -40,8 +40,9 @@ struct AnimalCatalogView: View {
                     .padding(EdgeInsets(top: 16, leading: 8, bottom: 8, trailing: 8))
                 }
             }
-            .tint(.black)
         }
+        .foregroundStyle(Color("ButtonsColor"))
+//        .tint(Color("ButtonsColor"))
         .onAppear {
             animalsViewModel.fetchData()
         }

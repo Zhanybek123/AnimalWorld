@@ -11,6 +11,8 @@
 		D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */; };
 		D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */; };
 		D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873C2BB2A84454700E30935 /* AnimalItemView.swift */; };
+		D88C79AD2AFEBAA7003CE7AC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C79AC2AFEBAA7003CE7AC /* MapView.swift */; };
+		D88C79B02AFEC02B003CE7AC /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C79AF2AFEC02B003CE7AC /* MapModel.swift */; };
 		D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB82AA50A3B006A6FA1 /* Lion.wav */; };
 		D89CBCD52AA50A3E006A6FA1 /* Moose.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB92AA50A3B006A6FA1 /* Moose.wav */; };
 		D89CBCD62AA50A3E006A6FA1 /* Duck.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */; };
@@ -57,6 +59,8 @@
 		D873C2B42A81B46400E30935 /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
 		D873C2B92A843E5F00E30935 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		D873C2BB2A84454700E30935 /* AnimalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalItemView.swift; sourceTree = "<group>"; };
+		D88C79AC2AFEBAA7003CE7AC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D88C79AF2AFEC02B003CE7AC /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		D89CBCB82AA50A3B006A6FA1 /* Lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lion.wav; sourceTree = "<group>"; };
 		D89CBCB92AA50A3B006A6FA1 /* Moose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Moose.wav; sourceTree = "<group>"; };
 		D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Duck.wav; sourceTree = "<group>"; };
@@ -139,6 +143,14 @@
 				D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D88C79AE2AFEBFD2003CE7AC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D88C79AC2AFEBAA7003CE7AC /* MapView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
@@ -238,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				D8E069682A781E0F00A150B7 /* AnimalModel .swift */,
+				D88C79AF2AFEC02B003CE7AC /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				D873C2B72A843E2800E30935 /* AnimalCatalog */,
+				D88C79AE2AFEBFD2003CE7AC /* Map */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -362,7 +376,9 @@
 				D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */,
 				D873C2B32A81AC0D00E30935 /* AnimalsTypeDataService.swift in Sources */,
 				D873C2BC2A84454700E30935 /* AnimalItemView.swift in Sources */,
+				D88C79B02AFEC02B003CE7AC /* MapModel.swift in Sources */,
 				D8AAABB12AB9F2D100452B8A /* YoutubeVideoView.swift in Sources */,
+				D88C79AD2AFEBAA7003CE7AC /* MapView.swift in Sources */,
 				D873C2B52A81B46400E30935 /* AnimalsViewModel.swift in Sources */,
 				D873C2BA2A843E5F00E30935 /* AnimalDetailView.swift in Sources */,
 			);
@@ -489,7 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = MainBackgroundColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalWorld/Preview Content\"";
@@ -519,7 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = MainBackgroundColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalWorld/Preview Content\"";
