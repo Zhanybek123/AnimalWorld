@@ -13,13 +13,13 @@ struct AnimalWorldApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            let dataService = AnimalsDataService()
-//            let soundServise = AnimalSoundEffectService()
-//            let animalsViewModel = AnimalsViewModel(dataService: dataService,
-//                                                    animalSoundService: soundServise)
-//            AnimalCatalogView().environmentObject(animalsViewModel)
+            let dataService = AnimalsDataService()
+            let soundServise = AnimalSoundEffectService()
+            let animalsViewModel = AnimalsViewModel(dataService: dataService,
+                                                    animalSoundService: soundServise)
+            AnimalCatalogView().environmentObject(animalsViewModel)
             
-            ContentView()
+//            ContentView()
         }
     }
 }

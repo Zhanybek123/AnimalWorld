@@ -10,44 +10,30 @@ import MapKit
 
 struct ContentView: View {
     
-   @State var mock2 = [
+    @State var mock2 = [
         LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)),
         LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060))
     ]
     
     var body: some View {
         MapView(animalLandmarks: mock2)
-                .ignoresSafeArea()
+            .ignoresSafeArea()
     }
 }
 
 struct MapView: UIViewRepresentable {
     
     @State var animalLandmarks: [LandmarkAnnotation]
-    let landmarks = [LandmarkAnnotation(
-        title: "San Francisco",
-        subtitle: "City",
-        coordinate: CLLocationCoordinate2D(
-            latitude: 37.7749,
-            longitude: -122.4194)),
-                     LandmarkAnnotation(
-                        title: "San Francisco",
-                        subtitle: "City",
-                        coordinate: CLLocationCoordinate2D(
-                            latitude: 40.7128,
-                            longitude: -74.0060))
-    ]
     
-    func makeUIView(context: Context) -> MKMapView{
+    func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView(frame: .zero)
         mapView.mapType = .hybridFlyover
         return mapView
     }
     
-    func updateUIView(_ view: MKMapView, context: Context){
-         //If you changing the Map Annotation then you have to remove old Annotations
+    func updateUIView(_ view: MKMapView, context: Context) {
+        //If you changing the Map Annotation then you have to remove old Annotations
         view.removeAnnotations(view.annotations)
-        //passing model array here
         
         for landmark in animalLandmarks {
             view.addAnnotation(landmark)
@@ -56,8 +42,8 @@ struct MapView: UIViewRepresentable {
         view.backgroundColor = .red
     }
     
-    func makeCoordinator() -> MapViewCoordinator{
-        MapViewCoordinator(self)
+    func makeCoordinator() -> MapViewCoordinator {
+        return MapViewCoordinator(self)
     }
 }
 
@@ -86,21 +72,21 @@ class LandmarkAnnotation: NSObject, MKAnnotation {
 }
 
 class MapViewCoordinator: NSObject, MKMapViewDelegate {
-      var mapViewController: MapView
-        
-      init(_ control: MapView) {
-          self.mapViewController = control
-      }
-        
+    var mapViewController: MapView
+    
+    init(_ control: MapView) {
+        self.mapViewController = control
+    }
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         // Custom View for Annotation
         let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
         annotationView.canShowCallout = true
-
+        
         // Your custom image icon
         annotationView.image = UIImage(named: "Cat")
         annotationView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-
+        
         return annotationView
     }
 }
@@ -113,7 +99,7 @@ extension UIImage {
         defer { UIGraphicsEndImageContext() }
         
         guard let context = UIGraphicsGetCurrentContext(), let cgImage = cgImage else { return nil }
-
+        
         color.setFill()
         context.translateBy(x: 0, y: size.height)
         context.scaleBy(x: 1.0, y: -1.0)
@@ -121,7 +107,7 @@ extension UIImage {
         let rect = CGRect(origin: .zero, size: size)
         context.clip(to: rect, mask: cgImage)
         context.fill(rect)
-
+        
         let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
         return tintedImage
     }

@@ -73,6 +73,24 @@ struct AnimalDetailView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .padding([.leading, .trailing], 8)
                         .padding(.top, 20)
+                    
+                    Text("Let's see where they live!")
+                        .font(.custom("TrainLetters-Demo", size: 60))
+                        .frame(width: geo.size.width)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 10)
+                    ContentView()
+                        .frame(height: 300)
+                        .background(Color(.systemBackground))
+                        .shadow(
+                            color: .black.opacity(0.1),
+                            radius: 46,
+                            x: 0,
+                            y: 15
+                        )
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .padding([.leading, .trailing], 8)
+                        .padding(.top, 20)
                 }
             }
         }
