@@ -10,20 +10,22 @@ import MapKit
 
 struct ContentView: View {
     
-    @State var mock2 = [
-        LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)),
-        LandmarkAnnotation(title: "San Francisco", subtitle: "City", coordinate: CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060))
-    ]
+    let mock2 =
+        LandmarkAnnotation(title: "San Francisco", subtitle: "Cat", coordinates: [
+            CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
+            CLLocationCoordinate2D(latitude: 27.7749, longitude: -112.4194),
+            CLLocationCoordinate2D(latitude: 17.7749, longitude: -102.4194)
+        ])
     
     var body: some View {
-        MapView(animalLandmarks: mock2)
+        MapView(animalLandmark: mock2)
             .ignoresSafeArea()
     }
 }
 
 struct MapView: UIViewRepresentable {
     
-    @State var animalLandmarks: [LandmarkAnnotation]
+    let animalLandmark: LandmarkAnnotation
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView(frame: .zero)
@@ -32,18 +34,22 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        //If you changing the Map Annotation then you have to remove old Annotations
+        // If you're changing the Map Annotation, remove old Annotations
         view.removeAnnotations(view.annotations)
         
-        for landmark in animalLandmarks {
-            view.addAnnotation(landmark)
+        for coordinate in animalLandmark.coordinates {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            view.addAnnotation(annotation)
         }
+        
+        view.addAnnotation(animalLandmark)
+        
         view.delegate = context.coordinator
-        view.backgroundColor = .red
     }
     
     func makeCoordinator() -> MapViewCoordinator {
-        return MapViewCoordinator(self)
+        return MapViewCoordinator(self, animal: animalLandmark.subtitle ?? "Dog")
     }
 }
 
@@ -60,22 +66,27 @@ struct Location {
 class LandmarkAnnotation: NSObject, MKAnnotation {
     let title: String?
     let subtitle: String?
-    let coordinate: CLLocationCoordinate2D
+    let coordinates: [CLLocationCoordinate2D]
+    var coordinate: CLLocationCoordinate2D {
+        return coordinates.first ?? CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    }
     
     init(title: String?,
          subtitle: String?,
-         coordinate: CLLocationCoordinate2D) {
+         coordinates: [CLLocationCoordinate2D]) {
         self.title = title
         self.subtitle = subtitle
-        self.coordinate = coordinate
+        self.coordinates = coordinates
     }
 }
 
 class MapViewCoordinator: NSObject, MKMapViewDelegate {
     var mapViewController: MapView
+    var animalPicture: String
     
-    init(_ control: MapView) {
+    init(_ control: MapView, animal: String) {
         self.mapViewController = control
+        self.animalPicture = animal
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -84,7 +95,7 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
         annotationView.canShowCallout = true
         
         // Your custom image icon
-        annotationView.image = UIImage(named: "Cat")
+        annotationView.image = UIImage(named: animalPicture)
         annotationView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         
         return annotationView
