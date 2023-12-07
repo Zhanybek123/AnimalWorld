@@ -28,8 +28,9 @@ struct AnimalDetailView: View {
         let scaleFactor: CGFloat = isScaled ? 1.5 : 1
         
         GeometryReader { geo in
-            Color(.systemBlue)
-                .ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue, .purple]),
+                           startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
             ScrollView{
                 VStack{
                     Image(animalViewModel.animals[animalIndexPath].pictureName)
@@ -75,9 +76,26 @@ struct AnimalDetailView: View {
                         .padding(.top, 20)
                     
                     Text("Let's see where they live!")
-                        .font(.custom("TrainLetters-Demo", size: 60))    .frame(width: geo.size.width)
+                        .font(.custom("King Kids", size: 50))
+                        .frame(width: geo.size.width)
                         .multilineTextAlignment(.center)
                         .padding(.top, 10)
+                    NavigationLink {
+                        EarthMapView(animalCoordinates:
+                                        LandmarkAnnotation(animalPictureName:
+                                                            animalViewModel.animals[animalIndexPath].pictureName,
+                                                           coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                    } label: {
+                        Text("Open map in full screen")
+                            .font(.title)
+                            .bold()
+                            .foregroundStyle(.brown)
+                            .padding([.top, .bottom, .leading, .trailing], 10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.brown, lineWidth: 5)
+                            )
+                    }
                     EarthMapView(animalCoordinates:
                                     LandmarkAnnotation(animalPictureName:
                                                         animalViewModel.animals[animalIndexPath].pictureName,
@@ -92,16 +110,7 @@ struct AnimalDetailView: View {
                         )
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .padding([.leading, .trailing], 8)
-                        .padding(.top, 20)
-                    NavigationLink {
-                        EarthMapView(animalCoordinates:
-                                        LandmarkAnnotation(animalPictureName:
-                                                            animalViewModel.animals[animalIndexPath].pictureName,
-                                                           coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
-                    } label: {
-                        Text(verbatim: "Open in full screeen")
-                    }
-
+//                        .padding(.top, 20)
                 }
             }
         }
