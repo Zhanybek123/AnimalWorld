@@ -14,7 +14,7 @@ struct AnimalItemView: View {
     
     var body: some View { 
             VStack {
-                Image(viewModel.animals[animalIndex].fileName)
+                Image(viewModel.animals[animalIndex].pictureName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
 //                    .frame(width: imageWidth, height: imageHeight)

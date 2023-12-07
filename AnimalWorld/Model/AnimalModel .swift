@@ -10,14 +10,14 @@ import Foundation
 struct Animal: Hashable, Identifiable {
     let id = UUID()
     let type: String
-    let fileName: String
+    let pictureName: String
     let name: String
-    let sourceID: String
-    let InhabitantLocation: [AnimalLiveLication]
+    let videoSourceID: String
+    let inhabitantLocation: LandmarkAnnotation
 }
 
-struct AnimalLiveLication: Identifiable, Hashable {
+struct AnimalLiveLocation: Identifiable, Hashable {
     let id = UUID()
     let latitude: Double
-    let longtitude: Double
+    let longitude: Double
 }

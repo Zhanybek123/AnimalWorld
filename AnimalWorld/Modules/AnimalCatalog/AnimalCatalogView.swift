@@ -21,8 +21,9 @@ struct AnimalCatalogView: View {
                         LazyVGrid(columns: colomns) {
                             ForEach(Array(animalsViewModel.animals.enumerated()), id: \.offset) { index, animal in
                                 NavigationLink(destination:
-                                                AnimalDetailView(animalIndexPath: index,
-                                                                 animalType: animal.fileName))
+                                                AnimalDetailView(
+                                                    animalIndexPath: index,
+                                                    animalType: animal.pictureName))
                                 {
                                     AnimalItemView(animalIndex: index)
                                 }
@@ -42,7 +43,6 @@ struct AnimalCatalogView: View {
             }
         }
         .foregroundStyle(Color("ButtonsColor"))
-//        .tint(Color("ButtonsColor"))
         .onAppear {
             animalsViewModel.fetchData()
         }

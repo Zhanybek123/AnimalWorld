@@ -32,7 +32,7 @@ struct AnimalDetailView: View {
                 .ignoresSafeArea()
             ScrollView{
                 VStack{
-                    Image(animalViewModel.animals[animalIndexPath].fileName)
+                    Image(animalViewModel.animals[animalIndexPath].pictureName)
                         .resizable()
                         .scaledToFit()
                         .imageScale(.large)
@@ -61,7 +61,7 @@ struct AnimalDetailView: View {
                         .font(.custom("TrainLetters-Demo", size: 60))
                         .frame(width: geo.size.width, height: 20)
                         .padding(.top, 10)
-                    YoutubeVideoView(stringID: animalViewModel.animals[animalIndexPath].sourceID)
+                    YoutubeVideoView(stringID: animalViewModel.animals[animalIndexPath].videoSourceID)
                         .frame(height: 300)
                         .background(Color(.systemBackground))
                         .shadow(
@@ -75,12 +75,14 @@ struct AnimalDetailView: View {
                         .padding(.top, 20)
                     
                     Text("Let's see where they live!")
-                        .font(.custom("TrainLetters-Demo", size: 60))
-                        .frame(width: geo.size.width)
+                        .font(.custom("TrainLetters-Demo", size: 60))    .frame(width: geo.size.width)
                         .multilineTextAlignment(.center)
                         .padding(.top, 10)
-                    ContentView()
-                        .frame(height: 300)
+                    EarthMapView(animalCoordinates:
+                                    LandmarkAnnotation(animalPictureName:
+                                                        animalViewModel.animals[animalIndexPath].pictureName,
+                                                       coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                        .frame(height: 500)
                         .background(Color(.systemBackground))
                         .shadow(
                             color: .black.opacity(0.1),
@@ -91,6 +93,15 @@ struct AnimalDetailView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .padding([.leading, .trailing], 8)
                         .padding(.top, 20)
+                    NavigationLink {
+                        EarthMapView(animalCoordinates:
+                                        LandmarkAnnotation(animalPictureName:
+                                                            animalViewModel.animals[animalIndexPath].pictureName,
+                                                           coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                    } label: {
+                        Text(verbatim: "Open in full screeen")
+                    }
+
                 }
             }
         }
