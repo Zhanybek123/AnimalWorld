@@ -75,7 +75,7 @@ struct AnimalDetailView: View {
                         .padding([.leading, .trailing], 8)
                         .padding(.top, 20)
                     
-                    Text("Let's see where they live!")
+                    Text("Let's see where you can find them!")
                         .font(.custom("King Kids", size: 50))
                         .frame(width: geo.size.width)
                         .multilineTextAlignment(.center)
