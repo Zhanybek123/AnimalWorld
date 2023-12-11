@@ -878,64 +878,26 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Elephant",
                     coordinates: [
-                        // African Elephant (Loxodonta africana)
-                        CLLocationCoordinate2D(latitude: -3.1019, longitude: 35.0778), /* Tarangire National Park, Tanzania */
-                        CLLocationCoordinate2D(latitude: 11.0598, longitude: 27.6971), /* Samburu National Reserve, Kenya */
-                        CLLocationCoordinate2D(latitude: -18.9249, longitude: 24.7314), /* Chobe National Park, Botswana */
-                        
-                        // Asian Elephant (Elephas maximus)
-                        CLLocationCoordinate2D(latitude: 27.1751, longitude: 78.0421), /* Jaipur, India */
-                        CLLocationCoordinate2D(latitude: 7.8731, longitude: 80.7718), /* Udawalawe National Park, Sri Lanka */
-                        CLLocationCoordinate2D(latitude: 21.9162, longitude: 95.9560), /* Bago Region, Myanmar */
-                        
-                        // North American Elephant (Mammut americanum)
-                        CLLocationCoordinate2D(latitude: 39.7392, longitude: -104.9903), /* Denver, Colorado, USA */
-                        CLLocationCoordinate2D(latitude: 43.6532, longitude: -79.3832), /* Toronto, Ontario, Canada */
-                        
-                        // South American Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -23.5505, longitude: -46.6333), /* São Paulo, Brazil */
-                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
-                        
-                        // European Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278), /* London, United Kingdom */
-                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
-                        
-                        // Australian Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
-                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
-                        
-                        // Antarctic Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -77.8463, longitude: 166.6670), /* McMurdo Station, Antarctica */
-                        CLLocationCoordinate2D(latitude: -62.5061, longitude: -59.6753), /* Research Station, Antarctica */
-                        // African Elephant (Loxodonta africana)
-                        CLLocationCoordinate2D(latitude: -13.2543, longitude: 34.3015), /* Liwonde National Park, Malawi */
-                        CLLocationCoordinate2D(latitude: 5.9631, longitude: 80.3831), /* Pinnawala Elephant Orphanage, Sri Lanka */
-                        CLLocationCoordinate2D(latitude: 13.4128, longitude: 28.4448), /* Murchison Falls National Park, Uganda */
-                        
-                        // Asian Elephant (Elephas maximus)
-                        CLLocationCoordinate2D(latitude: 11.5564, longitude: 104.9282), /* Angkor Wat, Cambodia */
-                        CLLocationCoordinate2D(latitude: 10.8505, longitude: 76.2711), /* Guruvayur, India */
-                        CLLocationCoordinate2D(latitude: 6.2442, longitude: 80.0545), /* Minneriya National Park, Sri Lanka */
-                        
-                        // North American Elephant (Mammut americanum)
-                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, California, USA */
-                        CLLocationCoordinate2D(latitude: 53.5461, longitude: -113.4938), /* Edmonton, Alberta, Canada */
-                        
-                        // South American Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -12.9714, longitude: -38.5014), /* Salvador, Brazil */
-                        CLLocationCoordinate2D(latitude: -34.6076, longitude: -58.4371), /* Buenos Aires, Argentina */
-                        
-                        // European Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
-                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Erfurt, Germany */
-                        
-                        // Australian Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -27.4698, longitude: 153.0251), /* Brisbane, Australia */
-                        CLLocationCoordinate2D(latitude: -31.9505, longitude: 115.8605), /* Perth, Australia */
-                        
-                        // Antarctic Elephant (Not native)
-                        CLLocationCoordinate2D(latitude: -64.8255, longitude: -64.2330), /* Palmer Station, Antarctica */
-                        CLLocationCoordinate2D(latitude: -68.1193, longitude: 78.4307), /* Casey Station, Antarctica */
+                        CLLocationCoordinate2D(latitude: 8.6753, longitude: 80.7718), /* Udawalawe National Park, Sri Lanka */
+                        CLLocationCoordinate2D(latitude: 27.1638, longitude: 78.0422), /* Jim Corbett National Park, India */
+                        CLLocationCoordinate2D(latitude: -3.1072, longitude: 35.5994), /* Serengeti National Park, Tanzania */
+                        CLLocationCoordinate2D(latitude: 12.6577, longitude: 101.0376), /* Khao Yai National Park, Thailand */
+                        CLLocationCoordinate2D(latitude: -2.6523, longitude: 31.1987), /* Tarangire National Park, Tanzania */
+                        CLLocationCoordinate2D(latitude: 8.9342, longitude: 37.7614), /* Amboseli National Park, Kenya */
+                        CLLocationCoordinate2D(latitude: 27.7131, longitude: 85.3157), /* Chitwan National Park, Nepal */
+                        CLLocationCoordinate2D(latitude: 5.6806, longitude: 36.6516), /* Omo National Park, Ethiopia */
+                        CLLocationCoordinate2D(latitude: 10.4576, longitude: 78.8005), /* Mudumalai National Park, India */
+                        CLLocationCoordinate2D(latitude: 18.8548, longitude: 102.8607), /* Xe Pian National Park, Laos */
+                        CLLocationCoordinate2D(latitude: -12.5731, longitude: 32.6216), /* South Luangwa National Park, Zambia */
+                        CLLocationCoordinate2D(latitude: 10.7656, longitude: 106.6483), /* Cat Tien National Park, Vietnam */
+                        CLLocationCoordinate2D(latitude: -4.4604, longitude: 34.3403), /* Lake Manyara National Park, Tanzania */
+                        CLLocationCoordinate2D(latitude: 5.9631, longitude: 80.5518), /* Yala National Park, Sri Lanka */
+                        CLLocationCoordinate2D(latitude: 8.9784, longitude: 38.7578), /* Mago National Park, Ethiopia */
+                        CLLocationCoordinate2D(latitude: 27.6804, longitude: 84.4258), /* Bardia National Park, Nepal */
+                        CLLocationCoordinate2D(latitude: 27.0987, longitude: 78.0266), /* Dudhwa National Park, India */
+                        CLLocationCoordinate2D(latitude: 5.3490, longitude: 36.5084), /* Sibiloi National Park, Kenya */
+                        CLLocationCoordinate2D(latitude: 25.4258, longitude: 81.9156), /* Panna National Park, India */
+                        CLLocationCoordinate2D(latitude: 7.0404, longitude: 80.9058), /* Minneriya National Park, Sri Lanka */
                     ]
                    )
                   ),
@@ -1311,20 +1273,505 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-                        Animal(type: "fish", pictureName: "Moose", name: "Moose", sourceID: "9MUCQwW2W7k", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Otter", name: "Otter", sourceID: "piR7rXl1PBo", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Owl", name: "Owl", sourceID: "m0XgSrdYQRY", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Panda", name: "Panda", sourceID: "VNxx8jVEm3I", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Pig", name: "Pig", sourceID: "06sDgp3wZUc", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Penguin", name: "Penguin", sourceID: "O8qilxaBR20", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Raccoon", name: "Raccoon", sourceID: "1lViKrWgTYk", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Sheep", name: "Sheep", sourceID: "u_Mxlh61Ybw", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Sloth", name: "Sloth", sourceID: "9qdxBpyV24k", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Snake", name: "Snake", sourceID: "Cf2qpXb81lA", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Squirrel", name: "Squirrel", sourceID: "tG_Gz67Crt8", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Tiger", name: "Tiger", sourceID: "jEQaRY4YpVo", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Wolf", name: "Wolf", sourceID: "VYKsI5ILiaQ", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */),
-            //            Animal(type: "fish", pictureName: "Zebra", name: "Zebra", sourceID: "kWxnadQI5Qw", inhabitantLocation: [AnimalLiveLocation(latitude: 28.6139, longitude: 77.2090)] /* Dehli */)
+            Animal(type: "Mammal",
+                   pictureName: "Moose",
+                   name: "Moose",
+                   videoSourceID: "9MUCQwW2W7k",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Moose",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 63.8600, longitude: -149.5384), /* Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 63.7467, longitude: -135.3131), /* Yukon, Canada */
+                        CLLocationCoordinate2D(latitude: 61.0000, longitude: 9.0000), /* Norway */
+                        CLLocationCoordinate2D(latitude: 63.0000, longitude: 16.0000), /* Sweden */
+                        CLLocationCoordinate2D(latitude: 63.0000, longitude: 27.0000), /* Finland */
+                        CLLocationCoordinate2D(latitude: 56.1325, longitude: 160.6435), /* Kamchatka Peninsula, Russia */
+                        CLLocationCoordinate2D(latitude: 46.8625, longitude: 103.8467), /* Mongolia */
+                        CLLocationCoordinate2D(latitude: 43.0759, longitude: -107.2903), /* Wyoming, USA */
+                        CLLocationCoordinate2D(latitude: 45.2538, longitude: -69.4455), /* Maine, USA */
+                        CLLocationCoordinate2D(latitude: 53.7267, longitude: -127.6476), /* British Columbia, Canada */
+                        CLLocationCoordinate2D(latitude: 53.1355, longitude: -57.6604), /* Newfoundland and Labrador, Canada */
+                        CLLocationCoordinate2D(latitude: 53.9333, longitude: -116.5765), /* Alberta, Canada */
+                        CLLocationCoordinate2D(latitude: 44.3148, longitude: -85.6024), /* Michigan, USA */
+                        CLLocationCoordinate2D(latitude: 44.5588, longitude: -72.5778), /* Vermont, USA */
+                        CLLocationCoordinate2D(latitude: 54.1420, longitude: -106.6892), /* Saskatchewan, Canada */
+                        CLLocationCoordinate2D(latitude: 52.9399, longitude: -73.5491), /* Quebec, Canada */
+                        CLLocationCoordinate2D(latitude: 48.0000, longitude: 127.0000), /* Heilongjiang, China */
+                        CLLocationCoordinate2D(latitude: 63.4060, longitude: 13.2314), /* Jämtland County, Sweden */
+                        CLLocationCoordinate2D(latitude: 44.0682, longitude: -114.7420), /* Idaho, USA */
+                        CLLocationCoordinate2D(latitude: -23.0000, longitude: 143.0000), /* Queensland, Australia */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Otter",
+                   name: "Otter",
+                   videoSourceID: "piR7rXl1PBo",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Otter",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 36.6002, longitude: -121.8947), /* Monterey Bay, California, USA */
+                        CLLocationCoordinate2D(latitude: 57.3229, longitude: -4.4244), /* Loch Ness, Scotland */
+                        CLLocationCoordinate2D(latitude: 25.2866, longitude: -80.8987), /* Everglades National Park, Florida, USA */
+                        CLLocationCoordinate2D(latitude: -23.9884, longitude: 31.5547), /* Kruger National Park, South Africa */
+                        CLLocationCoordinate2D(latitude: -3.4653, longitude: -62.2159), /* Amazon Rainforest, Brazil */
+                        CLLocationCoordinate2D(latitude: 54.4609, longitude: -3.0886), /* Lake District, England */
+                        CLLocationCoordinate2D(latitude: 42.9942, longitude: 144.3818), /* Kushiro Shitsugen National Park, Japan */
+                        CLLocationCoordinate2D(latitude: 45.1805, longitude: 29.7328), /* Danube Delta, Romania */
+                        CLLocationCoordinate2D(latitude: 19.7679, longitude: 101.9911), /* Kuang Si Falls, Laos */
+                        CLLocationCoordinate2D(latitude: 53.1251, longitude: -9.6536), /* Aran Islands, Ireland */
+                        CLLocationCoordinate2D(latitude: 44.4279, longitude: -110.5885), /* Yellowstone National Park, Wyoming, USA */
+                        CLLocationCoordinate2D(latitude: 47.3384, longitude: 0.7141), /* Loire Valley, France */
+                        CLLocationCoordinate2D(latitude: 2.9784, longitude: 112.3070), /* Borneo, Malaysia */
+                        CLLocationCoordinate2D(latitude: 57.3070, longitude: -3.7243), /* Cairngorms National Park, Scotland */
+                        CLLocationCoordinate2D(latitude: 30.3410, longitude: 130.5390), /* Yakushima, Japan */
+                        CLLocationCoordinate2D(latitude: 48.7596, longitude: -113.7870), /* Glacier National Park, Montana, USA */
+                        CLLocationCoordinate2D(latitude: -0.7437, longitude: -90.3155), /* Galápagos Islands, Ecuador */
+                        CLLocationCoordinate2D(latitude: -25.6953, longitude: -54.4367), /* Iguazu Falls, Argentina/Brazil */
+                        CLLocationCoordinate2D(latitude: 25.0330, longitude: 121.5654), /* Taipei, Taiwan */
+                        CLLocationCoordinate2D(latitude: 56.1325, longitude: 160.6435), /* Kamchatka Peninsula, Russia */
+                        CLLocationCoordinate2D(latitude: 9.4207, longitude: 76.3272), /* Kerala Backwaters, India */
+                        CLLocationCoordinate2D(latitude: -28.5072, longitude: -57.0007), /* Esteros del Iberá, Argentina */
+                        CLLocationCoordinate2D(latitude: 53.5580, longitude: 108.1650), /* Lake Baikal, Russia */
+                        CLLocationCoordinate2D(latitude: 29.3586, longitude: 110.4344), /* Zhangjiajie National Forest Park, China */
+                        CLLocationCoordinate2D(latitude: 39.6333, longitude: -105.3167), /* Evergreen, Colorado, USA */
+                        CLLocationCoordinate2D(latitude: 44.8810, longitude: 15.6167), /* Plitvice Lakes National Park, Croatia */
+                        CLLocationCoordinate2D(latitude: 35.0658, longitude: 137.5532), /* Kiso River, Japan */
+                        CLLocationCoordinate2D(latitude: 57.4124, longitude: -6.2170), /* Isle of Skye, Scotland */
+                        CLLocationCoordinate2D(latitude: 14.3642, longitude: 100.5682), /* Mekong River, Laos */
+                        CLLocationCoordinate2D(latitude: -38.8520, longitude: 143.5167), /* Cape Otway, Australia */
+                    ]
+                   )
+                  ),
+            Animal(type: "Bird",
+                   pictureName: "Owl",
+                   name: "Owl",
+                   videoSourceID: "m0XgSrdYQRY",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Owl",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 51.5099, longitude: -0.1180), /* London, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: -23.5505, longitude: -46.6333), /* Sao Paulo, Brazil */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 19.0760, longitude: 72.8777), /* Mumbai, India */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: -3.9862), /* Edinburgh, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: -36.8485, longitude: 174.7633), /* Auckland, New Zealand */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: -151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 35.6894, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 40.4168, longitude: -3.7038), /* Madrid, Spain */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Panda",
+                   name: "Panda",
+                   videoSourceID: "VNxx8jVEm3I",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Panda",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 30.5928, longitude: 103.9947), /* Chengdu, China */
+                        CLLocationCoordinate2D(latitude: 32.0617, longitude: 107.3802), /* Shaanxi, China */
+                        CLLocationCoordinate2D(latitude: 26.2634, longitude: 109.6408), /* Guizhou, China */
+                        CLLocationCoordinate2D(latitude: 31.8168, longitude: 117.2264), /* Anhui, China */
+                        CLLocationCoordinate2D(latitude: 30.6514, longitude: 102.8175), /* Bifengxia Panda Base, China */
+                        CLLocationCoordinate2D(latitude: 29.5658, longitude: 103.3427), /* Wolong National Nature Reserve, China */
+                        CLLocationCoordinate2D(latitude: 32.2396, longitude: 109.8163), /* Foping National Nature Reserve, China */
+                        CLLocationCoordinate2D(latitude: 30.8682, longitude: 102.8326), /* Chengdu Research Base of Giant Panda Breeding, China */
+                        CLLocationCoordinate2D(latitude: 29.3141, longitude: 88.8310), /* Eastern Himalayas, Tibet Autonomous Region */
+                        CLLocationCoordinate2D(latitude: 33.3213, longitude: 104.0270), /* Gansu, China */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Pig",
+                   name: "Pig",
+                   videoSourceID: "06sDgp3wZUc",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Pig",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278), /* London, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: -23.5505, longitude: -46.6333), /* Sao Paulo, Brazil */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 19.0760, longitude: 72.8777), /* Mumbai, India */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: -3.9862), /* Edinburgh, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: -36.8485, longitude: 174.7633), /* Auckland, New Zealand */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: -151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 35.6894, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 40.4168, longitude: -3.7038), /* Madrid, Spain */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 45.5088, longitude: -73.5542), /* Montreal, Canada */
+                        CLLocationCoordinate2D(latitude: -31.9505, longitude: 115.8605), /* Perth, Australia */
+                        CLLocationCoordinate2D(latitude: 41.3851, longitude: 2.1734), /* Barcelona, Spain */
+                        CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780), /* Seoul, South Korea */
+                        CLLocationCoordinate2D(latitude: 23.8103, longitude: 90.4125), /* Dhaka, Bangladesh */
+                        CLLocationCoordinate2D(latitude: -22.9083, longitude: -43.1964), /* Rio de Janeiro, Brazil */
+                        CLLocationCoordinate2D(latitude: 55.9533, longitude: -3.1883), /* Edinburgh, Scotland */
+                        CLLocationCoordinate2D(latitude: -41.2866, longitude: 174.7734), /* Wellington, New Zealand */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: -0.0062), /* Crawley, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 51.0486, longitude: -114.0708), /* Calgary, Canada */
+                        CLLocationCoordinate2D(latitude: 39.9042, longitude: 116.4074), /* Beijing, China */
+                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
+                        CLLocationCoordinate2D(latitude: 55.6761, longitude: 12.5683), /* Copenhagen, Denmark */
+                        CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780), /* Seoul, South Korea */
+                        CLLocationCoordinate2D(latitude: -33.918861, longitude: 18.423300), /* Cape Town, South Africa */
+                        CLLocationCoordinate2D(latitude: 38.7223, longitude: -9.1393), /* Lisbon, Portugal */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: -34.6076, longitude: -58.4371), /* La Plata, Argentina */
+                        CLLocationCoordinate2D(latitude: 56.1304, longitude: -106.3468), /* Saskatchewan, Canada */
+                    ]
+                   )
+                  ),
+            Animal(type: "Bird",
+                   pictureName: "Penguin",
+                   name: "Penguin",
+                   videoSourceID: "O8qilxaBR20",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Penguin",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: -77.8469, longitude: 166.6673), /* Antarctica */
+                        CLLocationCoordinate2D(latitude: -54.4200, longitude: 3.3722), /* South Georgia Island */
+                        CLLocationCoordinate2D(latitude: -60.9820, longitude: -44.6420), /* South Orkney Islands */
+                        CLLocationCoordinate2D(latitude: -62.4460, longitude: -59.4090), /* South Shetland Islands */
+                        CLLocationCoordinate2D(latitude: -64.2008, longitude: -56.6639), /* Palmer Archipelago, Antarctica */
+                        CLLocationCoordinate2D(latitude: -36.7382, longitude: -67.6309), /* Falkland Islands */
+                        CLLocationCoordinate2D(latitude: -68.1193, longitude: 155.6509), /* Commonwealth Bay, Antarctica */
+                        CLLocationCoordinate2D(latitude: -64.8940, longitude: -62.4854), /* Deception Island, Antarctica */
+                        CLLocationCoordinate2D(latitude: -45.5712, longitude: -90.6920), /* Bouvet Island */
+                        CLLocationCoordinate2D(latitude: -60.9589, longitude: -45.5761), /* Peter I Island */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Raccoon",
+                   name: "Raccoon",
+                   videoSourceID: "1lViKrWgTYk",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Raccoon",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 38.9072, longitude: -77.0370), /* Washington, D.C., USA */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278), /* London, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 19.0760, longitude: 72.8777), /* Mumbai, India */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: -31.9505, longitude: 115.8605), /* Perth, Australia */
+                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: 55.9533, longitude: -3.1883), /* Edinburgh, Scotland */
+                        CLLocationCoordinate2D(latitude: -22.9083, longitude: -43.1964), /* Rio de Janeiro, Brazil */
+                        CLLocationCoordinate2D(latitude: 40.4168, longitude: -3.7038), /* Madrid, Spain */
+                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
+                        CLLocationCoordinate2D(latitude: 41.3851, longitude: 2.1734), /* Barcelona, Spain */
+                        CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780), /* Seoul, South Korea */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Sheep",
+                   name: "Sheep",
+                   videoSourceID: "u_Mxlh61Ybw",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Sheep",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 53.3498, longitude: -6.2603), /* Dublin, Ireland */
+                        CLLocationCoordinate2D(latitude: 55.9533, longitude: -3.1883), /* Edinburgh, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 19.0760, longitude: 72.8777), /* Mumbai, India */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: -31.9505, longitude: 115.8605), /* Perth, Australia */
+                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: -22.9083, longitude: -43.1964), /* Rio de Janeiro, Brazil */
+                        CLLocationCoordinate2D(latitude: 40.4168, longitude: -3.7038), /* Madrid, Spain */
+                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
+                        CLLocationCoordinate2D(latitude: 41.3851, longitude: 2.1734), /* Barcelona, Spain */
+                        CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780), /* Seoul, South Korea */
+                        CLLocationCoordinate2D(latitude: -29.9511, longitude: -71.3484), /* La Serena, Chile */
+                        CLLocationCoordinate2D(latitude: 61.5240, longitude: 105.3188), /* Siberia, Russia */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Sloth",
+                   name: "Sloth",
+                   videoSourceID: "9qdxBpyV24k",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Sloth",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 9.7489, longitude: -83.7534), /* Manuel Antonio National Park, Costa Rica */
+                        CLLocationCoordinate2D(latitude: 8.5379, longitude: -80.7821), /* Bocas del Toro, Panama */
+                        CLLocationCoordinate2D(latitude: 10.4806, longitude: -84.9964), /* Cahuita National Park, Costa Rica */
+                        CLLocationCoordinate2D(latitude: 10.3157, longitude: -84.4399), /* Tortuguero National Park, Costa Rica */
+                        CLLocationCoordinate2D(latitude: 5.2015, longitude: -52.6538), /* Surinam, South America */
+                        CLLocationCoordinate2D(latitude: -0.7882, longitude: -91.1374), /* Yasuní National Park, Ecuador */
+                        CLLocationCoordinate2D(latitude: 10.3926, longitude: -75.4794), /* Tayrona National Natural Park, Colombia */
+                        CLLocationCoordinate2D(latitude: 8.9659, longitude: -79.5560), /* Gamboa, Panama */
+                        CLLocationCoordinate2D(latitude: 9.4167, longitude: -64.4600), /* Henri Pittier National Park, Venezuela */
+                        CLLocationCoordinate2D(latitude: 9.7500, longitude: -83.7500), /* Corcovado National Park, Costa Rica */
+                        CLLocationCoordinate2D(latitude: -2.7960, longitude: -56.6844), /* Manaus, Brazil */
+                        CLLocationCoordinate2D(latitude: 10.3910, longitude: -75.4794), /* Sierra Nevada de Santa Marta, Colombia */
+                        CLLocationCoordinate2D(latitude: -9.1900, longitude: -75.0152), /* Amazon Rainforest, Peru */
+                        CLLocationCoordinate2D(latitude: 10.9543, longitude: -74.7977), /* Isla de Barú, Colombia */
+                        CLLocationCoordinate2D(latitude: 7.1254, longitude: -73.1198), /* Chicamocha Canyon, Colombia */
+                        CLLocationCoordinate2D(latitude: 9.7866, longitude: -84.1806), /* La Fortuna, Costa Rica */
+                        CLLocationCoordinate2D(latitude: 8.1115, longitude: -63.5520), /* Canaima National Park, Venezuela */
+                        CLLocationCoordinate2D(latitude: -4.6110, longitude: -73.9307), /* Pucallpa, Peru */
+                        CLLocationCoordinate2D(latitude: 8.5450, longitude: -83.3018), /* Puerto Viejo de Talamanca, Costa Rica */
+                        CLLocationCoordinate2D(latitude: -13.1628, longitude: -72.5450), /* Machu Picchu, Peru */
+                    ]
+                   )
+                  ),
+            Animal(type: "Reptile",
+                   pictureName: "Snake",
+                   name: "Snake",
+                   videoSourceID: "Cf2qpXb81lA",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Smake",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: -14.2350, longitude: -51.9253), /* Amazon Rainforest, Brazil */
+                        CLLocationCoordinate2D(latitude: 11.9416, longitude: 108.4422), /* Mekong Delta, Vietnam */
+                        CLLocationCoordinate2D(latitude: 4.5353, longitude: 114.7277), /* Borneo, Malaysia */
+                        CLLocationCoordinate2D(latitude: 7.8731, longitude: 80.7718), /* Sinharaja Forest Reserve, Sri Lanka */
+                        CLLocationCoordinate2D(latitude: 18.7763, longitude: 100.7737), /* Golden Triangle, Thailand */
+                        CLLocationCoordinate2D(latitude: -13.2543, longitude: 34.3015), /* South Luangwa National Park, Zambia */
+                        CLLocationCoordinate2D(latitude: -23.4425, longitude: -58.4438), /* Gran Chaco, Paraguay */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 9.1450, longitude: 40.4897), /* Bale Mountains, Ethiopia */
+                        CLLocationCoordinate2D(latitude: 6.4231, longitude: -66.5897), /* Canaima National Park, Venezuela */
+                        CLLocationCoordinate2D(latitude: -22.9576, longitude: 18.4904), /* Namib Desert, Namibia */
+                        CLLocationCoordinate2D(latitude: -15.3767, longitude: 166.9592), /* Vanuatu, Oceania */
+                        CLLocationCoordinate2D(latitude: 61.5240, longitude: -149.0930), /* Denali National Park, USA */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 61.5240, longitude: 105.3188), /* Siberia, Russia */
+                        CLLocationCoordinate2D(latitude: 27.9506, longitude: -82.4572), /* Florida Everglades, USA */
+                        CLLocationCoordinate2D(latitude: -13.1631, longitude: -72.5450), /* Machu Picchu, Peru */
+                        CLLocationCoordinate2D(latitude: 3.2028, longitude: 73.2207), /* Maldives, Indian Ocean */
+                        CLLocationCoordinate2D(latitude: 12.8797, longitude: 121.7740), /* Palawan, Philippines */
+                        CLLocationCoordinate2D(latitude: -23.5505, longitude: -46.6333), /* Sao Paulo, Brazil */
+                        CLLocationCoordinate2D(latitude: -2.3170, longitude: -65.7499), /* Manaus, Brazil */
+                        CLLocationCoordinate2D(latitude: -13.1628, longitude: -72.5450), /* Machu Picchu, Peru */
+                        CLLocationCoordinate2D(latitude: 9.9687, longitude: -84.0297), /* La Selva Biological Station, Costa Rica */
+                        CLLocationCoordinate2D(latitude: 7.6616, longitude: 80.7120), /* Udawalawe National Park, Sri Lanka */
+                        CLLocationCoordinate2D(latitude: 28.6139, longitude: 77.2090), /* Delhi, India */
+                        CLLocationCoordinate2D(latitude: -27.4698, longitude: 153.0251), /* Brisbane, Australia */
+                        CLLocationCoordinate2D(latitude: -8.0476, longitude: -34.8770), /* Recife, Brazil */
+                        CLLocationCoordinate2D(latitude: 6.3966, longitude: 2.4806), /* Porto-Novo, Benin */
+                        CLLocationCoordinate2D(latitude: 20.7984, longitude: -156.3319), /* Maui, Hawaii, USA */
+                        CLLocationCoordinate2D(latitude: 36.7783, longitude: -119.4179), /* Yosemite National Park, USA */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Squirrel",
+                   name: "Squirrel",
+                   videoSourceID: "tG_Gz67Crt8",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Squirrel",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278), /* London, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 19.0760, longitude: 72.8777), /* Mumbai, India */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: 40.4168, longitude: -3.7038), /* Madrid, Spain */
+                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
+                        CLLocationCoordinate2D(latitude: 41.3851, longitude: 2.1734), /* Barcelona, Spain */
+                        CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780), /* Seoul, South Korea */
+                        CLLocationCoordinate2D(latitude: -23.5505, longitude: -46.6333), /* Sao Paulo, Brazil */
+                        CLLocationCoordinate2D(latitude: 55.6761, longitude: 12.5683), /* Copenhagen, Denmark */
+                        CLLocationCoordinate2D(latitude: 43.6532, longitude: -79.3832), /* Toronto, Canada */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 61.5240, longitude: 105.3188), /* Siberia, Russia */
+                        CLLocationCoordinate2D(latitude: 38.9072, longitude: -77.0370), /* Washington, D.C., USA */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: 55.9533, longitude: -3.1883), /* Edinburgh, Scotland */
+                        CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093), /* Sydney, Australia */
+                        CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964), /* Rome, Italy */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: -22.9083, longitude: -43.1964), /* Rio de Janeiro, Brazil */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6176), /* Moscow, Russia */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: -1.2921, longitude: 36.8219), /* Nairobi, Kenya */
+                        CLLocationCoordinate2D(latitude: -26.2041, longitude: 28.0473), /* Johannesburg, South Africa */
+                        CLLocationCoordinate2D(latitude: -22.9068, longitude: -43.1729), /* Niterói, Brazil */
+                        CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816), /* Buenos Aires, Argentina */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                        CLLocationCoordinate2D(latitude: -37.8136, longitude: 144.9631), /* Melbourne, Australia */
+                        CLLocationCoordinate2D(latitude: 55.6761, longitude: 12.5683), /* Copenhagen, Denmark */
+                        CLLocationCoordinate2D(latitude: 43.6532, longitude: -79.3832), /* Toronto, Canada */
+                        CLLocationCoordinate2D(latitude: 61.5240, longitude: 105.3188), /* Siberia, Russia */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Tiger",
+                   name: "Tiger",
+                   videoSourceID: "jEQaRY4YpVo",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Tiger",
+                    coordinates: [
+                        // India
+                        CLLocationCoordinate2D(latitude: 20.5937, longitude: 78.9629), /* India */
+                        CLLocationCoordinate2D(latitude: 23.6850, longitude: 90.3563), /* Bangladesh */
+                        CLLocationCoordinate2D(latitude: 28.3949, longitude: 84.1240), /* Nepal */
+                        CLLocationCoordinate2D(latitude: 27.5142, longitude: 90.4336), /* Bhutan */
+                        CLLocationCoordinate2D(latitude: 15.8700, longitude: 100.9925), /* Thailand */
+                        CLLocationCoordinate2D(latitude: 4.2105, longitude: 101.9758), /* Malaysia */
+                        CLLocationCoordinate2D(latitude: -0.7893, longitude: 113.9213), /* Indonesia */
+                        CLLocationCoordinate2D(latitude: 21.9162, longitude: 95.9560), /* Myanmar (Burma) */
+                        CLLocationCoordinate2D(latitude: 19.8563, longitude: 102.4955), /* Laos */
+                        CLLocationCoordinate2D(latitude: 14.0583, longitude: 108.2772), /* Vietnam */
+                        CLLocationCoordinate2D(latitude: 12.5657, longitude: 104.9910), /* Cambodia */
+                        CLLocationCoordinate2D(latitude: 45.0448, longitude: 135.0000), /* Primorsky Krai, Russia */
+                        CLLocationCoordinate2D(latitude: 39.9042, longitude: 116.4074), /* Beijing, China */
+                        CLLocationCoordinate2D(latitude: 25.2769, longitude: 85.2381), /* Patna, India */
+                        CLLocationCoordinate2D(latitude: 13.0827, longitude: 80.2707), /* Chennai, India */
+                        CLLocationCoordinate2D(latitude: 23.8103, longitude: 90.4125), /* Dhaka, Bangladesh */
+                        CLLocationCoordinate2D(latitude: 24.3636, longitude: 88.6241), /* Rajshahi, Bangladesh */
+                        CLLocationCoordinate2D(latitude: 27.7172, longitude: 85.3240), /* Kathmandu, Nepal */
+                        CLLocationCoordinate2D(latitude: 28.2000, longitude: 83.9810), /* Pokhara, Nepal */
+                        CLLocationCoordinate2D(latitude: 13.7563, longitude: 100.5018), /* Bangkok, Thailand */
+                        CLLocationCoordinate2D(latitude: 18.7963, longitude: 98.9865), /* Chiang Mai, Thailand */
+                        CLLocationCoordinate2D(latitude: 3.1390, longitude: 101.6869), /* Kuala Lumpur, Malaysia */
+                        CLLocationCoordinate2D(latitude: 5.9788, longitude: 116.0753), /* Kota Kinabalu, Malaysia */
+                        CLLocationCoordinate2D(latitude: -6.2088, longitude: 106.8456), /* Jakarta, Indonesia */
+                        CLLocationCoordinate2D(latitude: -7.2504, longitude: 112.7688), /* Surabaya, Indonesia */
+                        CLLocationCoordinate2D(latitude: 16.8661, longitude: 96.1951), /* Yangon, Myanmar */
+                        CLLocationCoordinate2D(latitude: 20.7910, longitude: 96.1470), /* Mandalay, Myanmar */
+                        CLLocationCoordinate2D(latitude: 17.9757, longitude: 102.6331), /* Vientiane, Laos */
+                        CLLocationCoordinate2D(latitude: 19.4500, longitude: 103.4167), /* Luang Prabang, Laos */
+                        CLLocationCoordinate2D(latitude: 21.0285, longitude: 105.8542), /* Hanoi, Vietnam */
+                        CLLocationCoordinate2D(latitude: 10.7769, longitude: 106.7009), /* Ho Chi Minh City, Vietnam */
+                        CLLocationCoordinate2D(latitude: 11.5564, longitude: 104.9282), /* Phnom Penh, Cambodia */
+                        CLLocationCoordinate2D(latitude: 13.4125, longitude: 103.8670), /* Siem Reap, Cambodia */
+                        CLLocationCoordinate2D(latitude: 43.1340, longitude: 131.9284), /* Vladivostok, Russia */
+                        CLLocationCoordinate2D(latitude: 44.6031, longitude: 132.8166), /* Ussuriysk, Russia */
+                        CLLocationCoordinate2D(latitude: 30.5928, longitude: 114.3055), /* Wuhan, China */
+                        CLLocationCoordinate2D(latitude: 36.0611, longitude: 103.8343), /* Lanzhou, China */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Wolf",
+                   name: "Wolf",
+                   videoSourceID: "VYKsI5ILiaQ",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Wolf",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: 64.9631, longitude: -19.0208), /* Vatnajokull National Park, Iceland */
+                        CLLocationCoordinate2D(latitude: 38.7394, longitude: -106.1392), /* Rocky Mountain National Park, USA */
+                        CLLocationCoordinate2D(latitude: 61.0169, longitude: -149.7374), /* Chugach State Park, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 51.4260, longitude: -116.1782), /* Banff National Park, Canada */
+                        CLLocationCoordinate2D(latitude: 46.6035, longitude: -110.5402), /* Yellowstone National Park, USA */
+                        CLLocationCoordinate2D(latitude: 58.8069, longitude: 16.0820), /* Tiveden National Park, Sweden */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Algonquin Provincial Park, Canada */
+                        CLLocationCoordinate2D(latitude: 44.4279, longitude: 110.5885), /* Grand Teton National Park, USA */
+                        CLLocationCoordinate2D(latitude: 58.3127, longitude: -133.4380), /* Tongass National Forest, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 57.7973, longitude: -5.4644), /* Isle of Skye, Scotland */
+                        CLLocationCoordinate2D(latitude: 42.9385, longitude: -122.0973), /* Crater Lake National Park, USA */
+                        CLLocationCoordinate2D(latitude: 49.2827, longitude: -123.1207), /* Pacific Rim National Park Reserve, Canada */
+                        CLLocationCoordinate2D(latitude: 60.7978, longitude: 11.0530), /* Fulufjället National Park, Norway */
+                        CLLocationCoordinate2D(latitude: 37.8651, longitude: -119.5383), /* Yosemite National Park, USA */
+                        CLLocationCoordinate2D(latitude: 64.2008, longitude: -149.4937), /* Denali National Park, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 42.6557, longitude: -73.7562), /* Adirondack Park, USA */
+                        CLLocationCoordinate2D(latitude: 57.0000, longitude: -3.0000), /* Cairngorms National Park, Scotland */
+                        CLLocationCoordinate2D(latitude: 53.3498, longitude: -6.2603), /* Wicklow Mountains National Park, Ireland */
+                        CLLocationCoordinate2D(latitude: 60.9609, longitude: -149.1504), /* Kenai Fjords National Park, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 45.3315, longitude: -122.6665), /* Mount Hood National Forest, USA */
+                        CLLocationCoordinate2D(latitude: 37.8651, longitude: -112.4467), /* Bryce Canyon National Park, USA */
+                        CLLocationCoordinate2D(latitude: 64.8378, longitude: -147.7164), /* Fairbanks, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 49.2827, longitude: -123.1207), /* Pacific Rim National Park Reserve, Canada */
+                        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), /* San Francisco, USA */
+                        CLLocationCoordinate2D(latitude: 59.3293, longitude: 18.0686), /* Stockholm, Sweden */
+                        CLLocationCoordinate2D(latitude: 51.1657, longitude: 10.4515), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: 46.6031, longitude: -119.1142), /* Hanford Reach National Monument, USA */
+                        CLLocationCoordinate2D(latitude: 58.3019, longitude: -134.4197), /* Juneau, Alaska, USA */
+                        CLLocationCoordinate2D(latitude: 45.4215, longitude: -75.6993), /* Ottawa, Canada */
+                        CLLocationCoordinate2D(latitude: 57.7089, longitude: 11.9746), /* Gothenburg, Sweden */
+                        CLLocationCoordinate2D(latitude: 44.4268, longitude: 26.1025), /* Bucharest, Romania */
+                        CLLocationCoordinate2D(latitude: 60.1695, longitude: 24.9354), /* Helsinki, Finland */
+                        CLLocationCoordinate2D(latitude: 47.4979, longitude: 19.0402), /* Budapest, Hungary */
+                        CLLocationCoordinate2D(latitude: 43.6532, longitude: -79.3832), /* Toronto, Canada */
+                        CLLocationCoordinate2D(latitude: 52.5200, longitude: 13.4050), /* Berlin, Germany */
+                        CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), /* New York City, USA */
+                        CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), /* Los Angeles, USA */
+                        CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), /* Paris, France */
+                        CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278), /* London, United Kingdom */
+                        CLLocationCoordinate2D(latitude: 35.6895, longitude: 139.6917), /* Tokyo, Japan */
+                    ]
+                   )
+                  ),
+            Animal(type: "Mammal",
+                   pictureName: "Zebra",
+                   name: "Zebra",
+                   videoSourceID: "kWxnadQI5Qw",
+                   inhabitantLocation: LandmarkAnnotation(
+                    animalPictureName: "Zebra",
+                    coordinates: [
+                        CLLocationCoordinate2D(latitude: -19.0154, longitude: 23.4863), /* Chobe National Park, Botswana */
+                        CLLocationCoordinate2D(latitude: -2.2717, longitude: 34.7667), /* Serengeti National Park, Tanzania */
+                        CLLocationCoordinate2D(latitude: -24.1683, longitude: 30.9310), /* Kruger National Park, South Africa */
+                        CLLocationCoordinate2D(latitude: -18.8792, longitude: 24.8942), /* Hwange National Park, Zimbabwe */
+                        CLLocationCoordinate2D(latitude: -13.4584, longitude: 25.0862), /* South Luangwa National Park, Zambia */
+                        CLLocationCoordinate2D(latitude: -20.3484, longitude: 23.5547), /* Makgadikgadi Pans National Park, Botswana */
+                        CLLocationCoordinate2D(latitude: -3.4653, longitude: 36.8671), /* Ngorongoro Conservation Area, Tanzania */
+                        CLLocationCoordinate2D(latitude: -15.9333, longitude: 30.2333), /* Lower Zambezi National Park, Zambia */
+                        CLLocationCoordinate2D(latitude: -24.8397, longitude: 31.4659), /* Matobo National Park, Zimbabwe */
+                        CLLocationCoordinate2D(latitude: -20.8009, longitude: 17.4099), /* Etosha National Park, Namibia */
+                        CLLocationCoordinate2D(latitude: -23.8779, longitude: 20.8643), /* Kgalagadi Transfrontier Park, Namibia/Botswana/South Africa */
+                        CLLocationCoordinate2D(latitude: -29.6336, longitude: 30.3833), /* iSimangaliso Wetland Park, South Africa */
+                        CLLocationCoordinate2D(latitude: -7.0323, longitude: 37.6769), /* Tarangire National Park, Tanzania */
+                        CLLocationCoordinate2D(latitude: -20.7969, longitude: 29.4312), /* Gonarezhou National Park, Zimbabwe */
+                        CLLocationCoordinate2D(latitude: -26.9775, longitude: 32.8850), /* Mlilwane Wildlife Sanctuary, Eswatini (Swaziland) */
+                        CLLocationCoordinate2D(latitude: -16.1830, longitude: 30.0464), /* Mana Pools National Park, Zimbabwe */
+                        CLLocationCoordinate2D(latitude: -19.5383, longitude: 22.9572), /* Nxai Pan National Park, Botswana */
+                        CLLocationCoordinate2D(latitude: -4.2684, longitude: 31.5066), /* Selous Game Reserve, Tanzania */
+                        CLLocationCoordinate2D(latitude: -20.5701, longitude: 27.5162), /* Hwange National Park, Zimbabwe */
+                        CLLocationCoordinate2D(latitude: -20.6154, longitude: 16.2594), /* Namib-Naukluft National Park, Namibia */
+                    ]
+                   )
+                  )
         ]
     }
 }
