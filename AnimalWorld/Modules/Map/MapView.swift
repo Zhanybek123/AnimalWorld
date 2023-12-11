@@ -10,21 +10,6 @@ import MapKit
 
 struct EarthMapView: View {
     
-//    let mock2 =
-//    LandmarkAnnotation(animalPictureName: "Cat", coordinates: [
-//            CLLocationCoordinate2D(latitude: 67.7749, longitude: -12.4194),
-//            CLLocationCoordinate2D(latitude: 57.7749, longitude: -192.4194),
-//            CLLocationCoordinate2D(latitude: 47.7749, longitude: -182.4194),
-//            CLLocationCoordinate2D(latitude: 37.7749, longitude: -82.4194),
-//            CLLocationCoordinate2D(latitude: 27.7749, longitude: -92.4194),
-//            CLLocationCoordinate2D(latitude: 67.7749, longitude: -152.4194),
-//            CLLocationCoordinate2D(latitude: 57.7749, longitude: -142.4194),
-//            CLLocationCoordinate2D(latitude: 47.7749, longitude: -132.4194),
-//            CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
-//            CLLocationCoordinate2D(latitude: 27.7749, longitude: -112.4194),
-//            CLLocationCoordinate2D(latitude: 17.7749, longitude: -102.4194)
-//        ])
-    
     let animalCoordinates: LandmarkAnnotation
     
     var body: some View {
@@ -62,23 +47,6 @@ struct MapView: UIViewRepresentable {
         return MapViewCoordinator(self, animal: animalLandmark.animalPictureName ?? "Dog")
     }
 }
-
-//#Preview {
-//    let mock2 = LandmarkAnnotation(animalPictureName: "Cat", coordinates: [
-//        CLLocationCoordinate2D(latitude: 67.7749, longitude: -12.4194),
-//        CLLocationCoordinate2D(latitude: 57.7749, longitude: -192.4194),
-//        CLLocationCoordinate2D(latitude: 47.7749, longitude: -182.4194),
-//        CLLocationCoordinate2D(latitude: 37.7749, longitude: -82.4194),
-//        CLLocationCoordinate2D(latitude: 27.7749, longitude: -92.4194),
-//        CLLocationCoordinate2D(latitude: 67.7749, longitude: -152.4194),
-//        CLLocationCoordinate2D(latitude: 57.7749, longitude: -142.4194),
-//        CLLocationCoordinate2D(latitude: 47.7749, longitude: -132.4194),
-//        CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
-//        CLLocationCoordinate2D(latitude: 27.7749, longitude: -112.4194),
-//        CLLocationCoordinate2D(latitude: 17.7749, longitude: -102.4194)
-//    ])
-//    EarthMapView(animalCoordinates: mock2)
-//}
 
 struct EarthMapView_Previews: PreviewProvider {
     static var previews: some View {

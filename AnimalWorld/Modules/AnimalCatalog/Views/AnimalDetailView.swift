@@ -96,21 +96,20 @@ struct AnimalDetailView: View {
                                     .stroke(Color.brown, lineWidth: 5)
                             )
                     }
-                    EarthMapView(animalCoordinates:
-                                    LandmarkAnnotation(animalPictureName:
-                                                        animalViewModel.animals[animalIndexPath].pictureName,
-                                                       coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
-                        .frame(height: 500)
-                        .background(Color(.systemBackground))
-                        .shadow(
-                            color: .black.opacity(0.1),
-                            radius: 46,
-                            x: 0,
-                            y: 15
-                        )
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .padding([.leading, .trailing], 8)
-//                        .padding(.top, 20)
+                    EarthMapView(animalCoordinates: LandmarkAnnotation(
+                        animalPictureName:animalViewModel.animals[animalIndexPath].pictureName,
+                        coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                    .frame(height: 500)
+                    .background(Color(.systemBackground))
+                    .shadow(
+                        color: .black.opacity(0.1),
+                        radius: 46,
+                        x: 0,
+                        y: 15
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .padding([.leading, .trailing], 8)
+                    //                        .padding(.top, 20)
                 }
             }
         }
