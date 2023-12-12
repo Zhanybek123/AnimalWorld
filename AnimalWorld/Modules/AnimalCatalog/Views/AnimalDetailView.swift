@@ -23,7 +23,6 @@ struct AnimalDetailView: View {
     @State private var isScaled = false
     @State var screenIsDesabled = false
     
-    
     var body: some View {
         let scaleFactor: CGFloat = isScaled ? 1.5 : 1
         
@@ -37,7 +36,8 @@ struct AnimalDetailView: View {
                         .resizable()
                         .scaledToFit()
                         .imageScale(.large)
-                        .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height / Layout.imageHeight)
+                        .frame(width: geo.size.width / Layout.imageWidth, height: geo.size.height /
+                               Layout.imageHeight)
                         .scaleEffect(scaleFactor)
                         .animation(.easeInOut(duration: 1.0), value: scaleFactor)
                         .onTapGesture {
@@ -53,7 +53,6 @@ struct AnimalDetailView: View {
                                 animalViewModel.animalSoundService.playAnimalSound(of: animalType)
                                 print(animalType)
                             }
-                            
                         }
                         .disabled(screenIsDesabled)
                     
@@ -81,10 +80,11 @@ struct AnimalDetailView: View {
                         .multilineTextAlignment(.center)
                         .padding(.top, 10)
                     NavigationLink {
-                        EarthMapView(animalCoordinates:
-                                        LandmarkAnnotation(animalPictureName:
-                                                            animalViewModel.animals[animalIndexPath].pictureName,
-                                                           coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                        EarthMapView(
+                            animalCoordinates: LandmarkAnnotation(
+                                animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
+                                coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates)
+                        )
                     } label: {
                         Text("Open map in full screen")
                             .font(.title)
@@ -109,7 +109,6 @@ struct AnimalDetailView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding([.leading, .trailing], 8)
-                    //                        .padding(.top, 20)
                 }
             }
         }
@@ -122,3 +121,4 @@ struct AnimalDetailView_Previews: PreviewProvider {
         AnimalDetailView(animalIndexPath: 1, animalType: "Dog")
     }
 }
+
