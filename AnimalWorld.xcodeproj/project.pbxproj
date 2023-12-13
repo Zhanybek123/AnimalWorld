@@ -43,6 +43,7 @@
 		D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */; };
 		D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */; };
 		D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */; };
+		D89ED1A62B2A3B2200E4BB6C /* Bison.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A52B2A3B2200E4BB6C /* Bison.wav */; };
 		D8AAABB12AB9F2D100452B8A /* YoutubeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */; };
 		D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */; };
 		D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */; };
@@ -91,6 +92,7 @@
 		D89CBCD32AA50A3E006A6FA1 /* Elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Elephant.wav; sourceTree = "<group>"; };
 		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalSoundEffectService .swift"; sourceTree = "<group>"; };
+		D89ED1A52B2A3B2200E4BB6C /* Bison.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bison.wav; sourceTree = "<group>"; };
 		D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoView.swift; sourceTree = "<group>"; };
 		D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrainLetters-Demo.ttf"; sourceTree = "<group>"; };
 		D8AAABC42ABBA39500452B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D89ED1A52B2A3B2200E4BB6C /* Bison.wav */,
 				D89CBCCA2AA50A3D006A6FA1 /* Bear.wav */,
 				D89CBCC92AA50A3D006A6FA1 /* Buffalo.wav */,
 				D89CBCBB2AA50A3B006A6FA1 /* Cat.wav */,
@@ -332,6 +335,7 @@
 				D89CBCEB2AA50A3E006A6FA1 /* Pig.wav in Resources */,
 				D8E069612A781D9400A150B7 /* Preview Assets.xcassets in Resources */,
 				D89CBCED2AA50A3E006A6FA1 /* Hippo.wav in Resources */,
+				D89ED1A62B2A3B2200E4BB6C /* Bison.wav in Resources */,
 				D89CBCE32AA50A3E006A6FA1 /* Squirrel.wav in Resources */,
 				D89CBCD62AA50A3E006A6FA1 /* Duck.wav in Resources */,
 				D89CBCD72AA50A3E006A6FA1 /* Cat.wav in Resources */,
