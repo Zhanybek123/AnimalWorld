@@ -44,6 +44,9 @@
 		D89CBCF22AA50ABA006A6FA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */; };
 		D89CBCF42AA94C45006A6FA1 /* AnimalSoundEffectService .swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */; };
 		D89ED1A62B2A3B2200E4BB6C /* Bison.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A52B2A3B2200E4BB6C /* Bison.wav */; };
+		D89ED1A82B2A3FE000E4BB6C /* Koala.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A72B2A3FE000E4BB6C /* Koala.wav */; };
+		D89ED1AA2B2A412900E4BB6C /* Giraffe.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A92B2A412900E4BB6C /* Giraffe.wav */; };
+		D89ED1AE2B2A41DA00E4BB6C /* Hedgehog.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */; };
 		D8AAABB12AB9F2D100452B8A /* YoutubeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */; };
 		D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */; };
 		D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */; };
@@ -93,6 +96,9 @@
 		D89CBCF12AA50ABA006A6FA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D89CBCF32AA94C45006A6FA1 /* AnimalSoundEffectService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalSoundEffectService .swift"; sourceTree = "<group>"; };
 		D89ED1A52B2A3B2200E4BB6C /* Bison.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bison.wav; sourceTree = "<group>"; };
+		D89ED1A72B2A3FE000E4BB6C /* Koala.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Koala.wav; sourceTree = "<group>"; };
+		D89ED1A92B2A412900E4BB6C /* Giraffe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Giraffe.wav; sourceTree = "<group>"; };
+		D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hedgehog.wav; sourceTree = "<group>"; };
 		D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoView.swift; sourceTree = "<group>"; };
 		D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrainLetters-Demo.ttf"; sourceTree = "<group>"; };
 		D8AAABC42ABBA39500452B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */,
+				D89ED1A92B2A412900E4BB6C /* Giraffe.wav */,
+				D89ED1A72B2A3FE000E4BB6C /* Koala.wav */,
 				D89ED1A52B2A3B2200E4BB6C /* Bison.wav */,
 				D89CBCCA2AA50A3D006A6FA1 /* Bear.wav */,
 				D89CBCC92AA50A3D006A6FA1 /* Buffalo.wav */,
@@ -355,8 +364,10 @@
 				D89CBCDE2AA50A3E006A6FA1 /* Raccoon.wav in Resources */,
 				D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */,
 				D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */,
+				D89ED1AA2B2A412900E4BB6C /* Giraffe.wav in Resources */,
 				D89CBCDF2AA50A3E006A6FA1 /* Chicken.wav in Resources */,
 				D8AAABC62ABBA77800452B8A /* King Kids.otf in Resources */,
+				D89ED1AE2B2A41DA00E4BB6C /* Hedgehog.wav in Resources */,
 				D89CBCEF2AA50A3E006A6FA1 /* Elephant.wav in Resources */,
 				D89CBCDA2AA50A3E006A6FA1 /* Monkey.wav in Resources */,
 				D89CBCE92AA50A3E006A6FA1 /* Dog.wav in Resources */,
@@ -364,6 +375,7 @@
 				D89CBCD92AA50A3E006A6FA1 /* Owl.wav in Resources */,
 				D89CBCE12AA50A3E006A6FA1 /* Wolf.wav in Resources */,
 				D89CBCDC2AA50A3E006A6FA1 /* Cow.wav in Resources */,
+				D89ED1A82B2A3FE000E4BB6C /* Koala.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

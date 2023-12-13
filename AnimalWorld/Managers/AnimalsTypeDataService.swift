@@ -304,7 +304,6 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            // MARK: -Missing animal sound:
             Animal(type: "Mammal ",
                    pictureName: "Bison",
                    name: "Bison",
@@ -457,7 +456,6 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            // MARK: -Missing animal sound:
             Animal(type: "Mammal",
                    pictureName: "Koala",
                    name: "Koala",
@@ -947,7 +945,6 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            // MARK: -Missing animal sound:
             Animal(type: "Mammal",
                    pictureName: "Giraffe",
                    name: "Giraffe",
@@ -998,7 +995,6 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            // MARK: -Missing animal sound:
             Animal(type: "mammal",
                    pictureName: "Hedgehog",
                    name: "Hedgehog",
