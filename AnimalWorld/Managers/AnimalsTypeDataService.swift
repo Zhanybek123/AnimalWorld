@@ -1303,7 +1303,6 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            // MARK: -Missing animal sound:
             Animal(type: "Mammal",
                    pictureName: "Otter",
                    name: "Otter",

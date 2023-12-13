@@ -47,6 +47,8 @@
 		D89ED1A82B2A3FE000E4BB6C /* Koala.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A72B2A3FE000E4BB6C /* Koala.wav */; };
 		D89ED1AA2B2A412900E4BB6C /* Giraffe.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1A92B2A412900E4BB6C /* Giraffe.wav */; };
 		D89ED1AE2B2A41DA00E4BB6C /* Hedgehog.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */; };
+		D89ED1B02B2A43D800E4BB6C /* Otter.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1AF2B2A43D800E4BB6C /* Otter.wav */; };
+		D89ED1B22B2A44FF00E4BB6C /* Panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89ED1B12B2A44FF00E4BB6C /* Panda.wav */; };
 		D8AAABB12AB9F2D100452B8A /* YoutubeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */; };
 		D8AAABB42AB9FB3300452B8A /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8AAABB32AB9FB3300452B8A /* YouTubePlayerKit */; };
 		D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */; };
@@ -99,6 +101,8 @@
 		D89ED1A72B2A3FE000E4BB6C /* Koala.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Koala.wav; sourceTree = "<group>"; };
 		D89ED1A92B2A412900E4BB6C /* Giraffe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Giraffe.wav; sourceTree = "<group>"; };
 		D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hedgehog.wav; sourceTree = "<group>"; };
+		D89ED1AF2B2A43D800E4BB6C /* Otter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Otter.wav; sourceTree = "<group>"; };
+		D89ED1B12B2A44FF00E4BB6C /* Panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Panda.wav; sourceTree = "<group>"; };
 		D8AAABB02AB9F2D100452B8A /* YoutubeVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoView.swift; sourceTree = "<group>"; };
 		D8AAABC02ABBA2F800452B8A /* TrainLetters-Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrainLetters-Demo.ttf"; sourceTree = "<group>"; };
 		D8AAABC42ABBA39500452B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 		D89CBC352AA509B0006A6FA1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D89ED1B12B2A44FF00E4BB6C /* Panda.wav */,
+				D89ED1AF2B2A43D800E4BB6C /* Otter.wav */,
 				D89ED1AD2B2A41DA00E4BB6C /* Hedgehog.wav */,
 				D89ED1A92B2A412900E4BB6C /* Giraffe.wav */,
 				D89ED1A72B2A3FE000E4BB6C /* Koala.wav */,
@@ -343,6 +349,7 @@
 				D89CBCE72AA50A3E006A6FA1 /* Horse.wav in Resources */,
 				D89CBCEB2AA50A3E006A6FA1 /* Pig.wav in Resources */,
 				D8E069612A781D9400A150B7 /* Preview Assets.xcassets in Resources */,
+				D89ED1B02B2A43D800E4BB6C /* Otter.wav in Resources */,
 				D89CBCED2AA50A3E006A6FA1 /* Hippo.wav in Resources */,
 				D89ED1A62B2A3B2200E4BB6C /* Bison.wav in Resources */,
 				D89CBCE32AA50A3E006A6FA1 /* Squirrel.wav in Resources */,
@@ -360,6 +367,7 @@
 				D89CBCE02AA50A3E006A6FA1 /* Leopard.wav in Resources */,
 				D89CBCDB2AA50A3E006A6FA1 /* Snake.wav in Resources */,
 				D89CBCEE2AA50A3E006A6FA1 /* Sheep.wav in Resources */,
+				D89ED1B22B2A44FF00E4BB6C /* Panda.wav in Resources */,
 				D89CBCE82AA50A3E006A6FA1 /* Tiger.wav in Resources */,
 				D89CBCDE2AA50A3E006A6FA1 /* Raccoon.wav in Resources */,
 				D8AAABC32ABBA2F900452B8A /* TrainLetters-Demo.ttf in Resources */,
