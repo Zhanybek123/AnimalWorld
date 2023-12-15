@@ -83,7 +83,8 @@ struct AnimalDetailView: View {
                         EarthMapView(
                             animalCoordinates: LandmarkAnnotation(
                                 animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
-                                coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates)
+                                coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates),
+                            animalAnotation: "Some logn texy over here"
                         )
                     } label: {
                         Text("Open map in full screen")

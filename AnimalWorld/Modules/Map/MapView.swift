@@ -10,18 +10,17 @@ import MapKit
 
 struct EarthMapView: View {
     
-    @State private var showingAlert = true
     let animalCoordinates: LandmarkAnnotation
+    var animalAnotation: String?
+    @State var isAnimalAnitationShown: Bool = true
     
     var body: some View {
-        ZStack {
+        ZStack{
             MapView(animalLandmark: animalCoordinates)
                 .ignoresSafeArea()
-            Button("") {
-                showingAlert = true
-            }
-            .alert("Important message", isPresented: $showingAlert) {
-                Button("OK", role: .cancel) { }
+            if animalAnotation != nil && isAnimalAnitationShown {
+                AnimalAnotationPopUpView(isAnimalAnitationShown: $isAnimalAnitationShown)
+                    .frame(width: 300, height: 300)
             }
         }
     }
