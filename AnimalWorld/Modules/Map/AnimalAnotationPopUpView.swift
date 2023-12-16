@@ -9,13 +9,14 @@ import SwiftUI
 
 struct AnimalAnotationPopUpView: View {
     
+    let anotationText: String?
     @Binding var isAnimalAnitationShown: Bool
     
     var body: some View {
         Color(.white)
             .opacity(0.3)
         VStack {
-            Text("Some long ass text about animal")
+            Text(anotationText ?? "")
                 .bold()
                 .padding(20)
             Button("😺Okay😺") {
@@ -30,7 +31,8 @@ struct AnimalAnotationPopUpView: View {
         }
     }
 }
+    
 
 #Preview {
-    AnimalAnotationPopUpView(isAnimalAnitationShown: .constant(true))
+    AnimalAnotationPopUpView(anotationText: "Some text about animal that can clarify thei location", isAnimalAnitationShown: .constant(true))
 }

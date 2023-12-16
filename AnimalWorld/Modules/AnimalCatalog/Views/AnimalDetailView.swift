@@ -20,8 +20,9 @@ struct AnimalDetailView: View {
     @EnvironmentObject var animalViewModel: AnimalsViewModel
     var animalIndexPath: Int
     var animalType: String
-    @State private var isScaled = false
-    @State var screenIsDesabled = false
+    @State private var isScaled: Bool = false
+    @State var screenIsDesabled: Bool = false
+    @State var isAnimalAnitationShown: Bool = true
     
     var body: some View {
         let scaleFactor: CGFloat = isScaled ? 1.5 : 1
@@ -84,7 +85,7 @@ struct AnimalDetailView: View {
                             animalCoordinates: LandmarkAnnotation(
                                 animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
                                 coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates),
-                            animalAnotation: "Some logn texy over here"
+                            animalAnotation: "Some logn texy over here", isAnimalAnitationShown: $isAnimalAnitationShown
                         )
                     } label: {
                         Text("Open map in full screen")
@@ -98,8 +99,10 @@ struct AnimalDetailView: View {
                             )
                     }
                     EarthMapView(animalCoordinates: LandmarkAnnotation(
-                        animalPictureName:animalViewModel.animals[animalIndexPath].pictureName,
-                        coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates))
+                        animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
+                        coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates),
+                                 animalAnotation: "Some really long text about animals and stuff", isAnimalAnitationShown: $isAnimalAnitationShown
+                    )
                     .frame(height: 500)
                     .background(Color(.systemBackground))
                     .shadow(
