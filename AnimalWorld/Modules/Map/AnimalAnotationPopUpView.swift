@@ -17,11 +17,13 @@ struct AnimalAnotationPopUpView: View {
             .opacity(0.3)
         VStack {
             Text(anotationText ?? "")
+                .tint(Color("MainBackgroundColor"))
                 .bold()
                 .padding(20)
             Button("😺Okay😺") {
                 isAnimalAnitationShown.toggle()
             }
+            .tint(Color("MainBackgroundColor"))
             .bold()
             .padding(10)
             .overlay(

@@ -28,7 +28,7 @@ struct AnimalCatalogView: View {
                                     AnimalItemView(animalIndex: index)
                                 }
                             }
-                        }    
+                        }
                     }
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {

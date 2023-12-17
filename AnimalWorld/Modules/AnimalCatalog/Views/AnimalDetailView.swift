@@ -85,7 +85,7 @@ struct AnimalDetailView: View {
                             animalCoordinates: LandmarkAnnotation(
                                 animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
                                 coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates),
-                            animalAnotation: "Some logn texy over here", isAnimalAnitationShown: $isAnimalAnitationShown
+                            animalAnotation: animalViewModel.animals[animalIndexPath].anotoation, isAnimalAnitationShown: $isAnimalAnitationShown
                         )
                     } label: {
                         Text("Open map in full screen")
@@ -101,7 +101,7 @@ struct AnimalDetailView: View {
                     EarthMapView(animalCoordinates: LandmarkAnnotation(
                         animalPictureName: animalViewModel.animals[animalIndexPath].pictureName,
                         coordinates: animalViewModel.animals[animalIndexPath].inhabitantLocation.coordinates),
-                                 animalAnotation: "Some really long text about animals and stuff", isAnimalAnitationShown: $isAnimalAnitationShown
+                                 animalAnotation: animalViewModel.animals[animalIndexPath].anotoation, isAnimalAnitationShown: $isAnimalAnitationShown
                     )
                     .frame(height: 500)
                     .background(Color(.systemBackground))

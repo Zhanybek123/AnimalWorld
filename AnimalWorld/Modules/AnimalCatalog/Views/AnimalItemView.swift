@@ -17,7 +17,6 @@ struct AnimalItemView: View {
                 Image(viewModel.animals[animalIndex].pictureName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-//                    .frame(width: imageWidth, height: imageHeight)
                 
                 Text(viewModel.animals[animalIndex].name)
                     .font(.custom("King Kids", size: 25))
