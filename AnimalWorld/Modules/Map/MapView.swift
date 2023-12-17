@@ -73,7 +73,7 @@ struct EarthMapView_Previews: PreviewProvider {
                                                             CLLocationCoordinate2D(latitude: 27.7749, longitude: -112.4194),
                                                             CLLocationCoordinate2D(latitude: 17.7749, longitude: -102.4194)
                                                            ]
-                                                          ), animalAnotation: "something", isAnimalAnitationShown: .constant(true)
+                                                          ), animalAnotation: "something", isAnimalAnitationShown: .constant(true   )
         )
     }
 }

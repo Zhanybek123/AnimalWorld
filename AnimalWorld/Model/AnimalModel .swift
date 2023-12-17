@@ -13,6 +13,7 @@ struct Animal: Hashable, Identifiable {
     let pictureName: String
     let name: String
     let videoSourceID: String
+    let anotoation: String?
     let inhabitantLocation: LandmarkAnnotation
 }
 

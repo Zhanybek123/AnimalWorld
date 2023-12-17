@@ -19,7 +19,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Cat",
                    name: "Cat",
-                   videoSourceID: "33_1arqK0Dk",
+                   videoSourceID: "33_1arqK0Dk", anotoation: "Cats became widespread companions to humans, and their habitats expanded globally. Domestic cats are now found in various environments.",
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Cat",
                     coordinates: [
@@ -151,7 +151,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Dog",
                    name: "Dog",
-                   videoSourceID: "b43PbeSekDo",
+                   videoSourceID: "b43PbeSekDo", anotoation: "Dogs were domesticated by humans thousands of years ago, and their natural habitats have evolved as a result of their close association with humans.",
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Dog",
                     coordinates: [
@@ -283,7 +283,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Bear",
                    name: "Bear",
-                   videoSourceID: "K-3snCVlrJ8",
+                   videoSourceID: "K-3snCVlrJ8", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Bear",
                     coordinates: [
@@ -307,7 +307,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal ",
                    pictureName: "Bison",
                    name: "Bison",
-                   videoSourceID: "zGfn7UKSnB4",
+                   videoSourceID: "zGfn7UKSnB4", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Bison",
                     coordinates: [
@@ -327,7 +327,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Bird",
                    pictureName: "Chicken",
                    name: "Chicken",
-                   videoSourceID: "wYKJkHcaMzE",
+                   videoSourceID: "wYKJkHcaMzE", anotoation: "Today, domestic chickens are found globally",
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Chicken",
                     coordinates: [
@@ -459,7 +459,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Koala",
                    name: "Koala",
-                   videoSourceID: "PzU-DjUMzsg",
+                   videoSourceID: "PzU-DjUMzsg", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Koala",
                     coordinates: [
@@ -484,7 +484,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Cow",
                    name: "Cow",
-                   videoSourceID: "UWmbg16ywD8",
+                   videoSourceID: "UWmbg16ywD8", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Cow",
                     coordinates: [
@@ -616,7 +616,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Reptiles",
                    pictureName: "Crocodile",
                    name: "Crocodile",
-                   videoSourceID: "nRwG-OqUkJY",
+                   videoSourceID: "nRwG-OqUkJY", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Crocodile",
                     coordinates: [
@@ -678,7 +678,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Bird",
                    pictureName: "Duck",
                    name: "Duck",
-                   videoSourceID: "ndiVL4plQDI",
+                   videoSourceID: "ndiVL4plQDI", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Duck",
                     coordinates: [
@@ -810,7 +810,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Bird",
                    pictureName: "Eagle",
                    name: "Eagle",
-                   videoSourceID: "BEgEIEfSuvU",
+                   videoSourceID: "BEgEIEfSuvU", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Eagle",
                     coordinates: [// Bald Eagle (Haliaeetus leucocephalus)
@@ -874,7 +874,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Elephant",
                    name: "Elephant",
-                   videoSourceID: "86YW3Bo9Sqc",
+                   videoSourceID: "86YW3Bo9Sqc", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Elephant",
                     coordinates: [
@@ -904,7 +904,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Fox",
                    name: "Fox",
-                   videoSourceID: "4_zEiHhvqF0",
+                   videoSourceID: "4_zEiHhvqF0", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Fox",
                     coordinates: [
@@ -948,7 +948,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Giraffe",
                    name: "Giraffe",
-                   videoSourceID: "1Uj2r-8DjG4",
+                   videoSourceID: "1Uj2r-8DjG4", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Giraffe",
                     coordinates: [
@@ -978,7 +978,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Gorilla",
                    name: "Gorilla",
-                   videoSourceID: "rHhSCO5-3Pg",
+                   videoSourceID: "rHhSCO5-3Pg", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Gorilla",
                     coordinates: [
@@ -998,7 +998,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "mammal",
                    pictureName: "Hedgehog",
                    name: "Hedgehog",
-                   videoSourceID: "Ec-iw5Na-Iw",
+                   videoSourceID: "Ec-iw5Na-Iw", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Hedgehog",
                     coordinates: [
@@ -1018,7 +1018,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Hippo",
                    name: "Hippo",
-                   videoSourceID: "0iYx5q5CudI",
+                   videoSourceID: "0iYx5q5CudI", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Hippo",
                     coordinates: [
@@ -1061,7 +1061,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "mammal",
                    pictureName: "Horse",
                    name: "Horse",
-                   videoSourceID: "ZxrEgghMA_k",
+                   videoSourceID: "ZxrEgghMA_k", anotoation: "As horses became domesticated, their natural habitats evolved to encompass a variety of environments influenced by human interaction.",
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Horse",
                     coordinates: [
@@ -1078,10 +1078,10 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
                     ]
                    )
                   ),
-            Animal(type: "fish",
+            Animal(type: "Mammal",
                    pictureName: "Leopard",
                    name: "Leopard",
-                   videoSourceID: "Cp1sSt_G4uo",
+                   videoSourceID: "Cp1sSt_G4uo", anotoation: nil,
                    inhabitantLocation:  LandmarkAnnotation(
                     animalPictureName: "Horse",
                     coordinates: [
@@ -1213,7 +1213,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "mammal",
                    pictureName: "Lion",
                    name: "Lion",
-                   videoSourceID: "tlZwYsJpqjo",
+                   videoSourceID: "tlZwYsJpqjo", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Lion",
                     coordinates: [
@@ -1246,7 +1246,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "mammal",
                    pictureName: "Monkey",
                    name: "Monkey",
-                   videoSourceID: "A6lmmAyvl3I",
+                   videoSourceID: "A6lmmAyvl3I", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Monkey",
                     coordinates: [
@@ -1276,7 +1276,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Moose",
                    name: "Moose",
-                   videoSourceID: "9MUCQwW2W7k",
+                   videoSourceID: "9MUCQwW2W7k", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Moose",
                     coordinates: [
@@ -1306,7 +1306,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Otter",
                    name: "Otter",
-                   videoSourceID: "piR7rXl1PBo",
+                   videoSourceID: "piR7rXl1PBo", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Otter",
                     coordinates: [
@@ -1346,7 +1346,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Bird",
                    pictureName: "Owl",
                    name: "Owl",
-                   videoSourceID: "m0XgSrdYQRY",
+                   videoSourceID: "m0XgSrdYQRY", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Owl",
                     coordinates: [
@@ -1376,7 +1376,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Panda",
                    name: "Panda",
-                   videoSourceID: "VNxx8jVEm3I",
+                   videoSourceID: "VNxx8jVEm3I", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Panda",
                     coordinates: [
@@ -1396,7 +1396,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Pig",
                    name: "Pig",
-                   videoSourceID: "06sDgp3wZUc",
+                   videoSourceID: "06sDgp3wZUc", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Pig",
                     coordinates: [
@@ -1445,7 +1445,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Bird",
                    pictureName: "Penguin",
                    name: "Penguin",
-                   videoSourceID: "O8qilxaBR20",
+                   videoSourceID: "O8qilxaBR20", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Penguin",
                     coordinates: [
@@ -1465,7 +1465,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Raccoon",
                    name: "Raccoon",
-                   videoSourceID: "1lViKrWgTYk",
+                   videoSourceID: "1lViKrWgTYk", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Raccoon",
                     coordinates: [
@@ -1496,7 +1496,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Sheep",
                    name: "Sheep",
-                   videoSourceID: "u_Mxlh61Ybw",
+                   videoSourceID: "u_Mxlh61Ybw", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Sheep",
                     coordinates: [
@@ -1527,7 +1527,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Sloth",
                    name: "Sloth",
-                   videoSourceID: "9qdxBpyV24k",
+                   videoSourceID: "9qdxBpyV24k", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Sloth",
                     coordinates: [
@@ -1557,7 +1557,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Reptile",
                    pictureName: "Snake",
                    name: "Snake",
-                   videoSourceID: "Cf2qpXb81lA",
+                   videoSourceID: "Cf2qpXb81lA", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Smake",
                     coordinates: [
@@ -1597,7 +1597,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Squirrel",
                    name: "Squirrel",
-                   videoSourceID: "tG_Gz67Crt8",
+                   videoSourceID: "tG_Gz67Crt8", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Squirrel",
                     coordinates: [
@@ -1647,7 +1647,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Tiger",
                    name: "Tiger",
-                   videoSourceID: "jEQaRY4YpVo",
+                   videoSourceID: "jEQaRY4YpVo", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Tiger",
                     coordinates: [
@@ -1695,7 +1695,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Wolf",
                    name: "Wolf",
-                   videoSourceID: "VYKsI5ILiaQ",
+                   videoSourceID: "VYKsI5ILiaQ", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Wolf",
                     coordinates: [
@@ -1745,7 +1745,7 @@ struct AnimalsDataService: AnimalsDataServiceProtocol {
             Animal(type: "Mammal",
                    pictureName: "Zebra",
                    name: "Zebra",
-                   videoSourceID: "kWxnadQI5Qw",
+                   videoSourceID: "kWxnadQI5Qw", anotoation: nil,
                    inhabitantLocation: LandmarkAnnotation(
                     animalPictureName: "Zebra",
                     coordinates: [
