@@ -14,6 +14,7 @@
 		D88C79AD2AFEBAA7003CE7AC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C79AC2AFEBAA7003CE7AC /* MapView.swift */; };
 		D88C79B02AFEC02B003CE7AC /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C79AF2AFEC02B003CE7AC /* MapModel.swift */; };
 		D890C2BA2B2D0C6400C45950 /* AnimalAnotationPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D890C2B92B2D0C6400C45950 /* AnimalAnotationPopUpView.swift */; };
+		D890C2BC2B2F7F2F00C45950 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D890C2BB2B2F7F2F00C45950 /* OnboardingView.swift */; };
 		D89CBCD42AA50A3E006A6FA1 /* Lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB82AA50A3B006A6FA1 /* Lion.wav */; };
 		D89CBCD52AA50A3E006A6FA1 /* Moose.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCB92AA50A3B006A6FA1 /* Moose.wav */; };
 		D89CBCD62AA50A3E006A6FA1 /* Duck.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */; };
@@ -71,6 +72,7 @@
 		D88C79AC2AFEBAA7003CE7AC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D88C79AF2AFEC02B003CE7AC /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		D890C2B92B2D0C6400C45950 /* AnimalAnotationPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAnotationPopUpView.swift; sourceTree = "<group>"; };
+		D890C2BB2B2F7F2F00C45950 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D89CBCB82AA50A3B006A6FA1 /* Lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lion.wav; sourceTree = "<group>"; };
 		D89CBCB92AA50A3B006A6FA1 /* Moose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Moose.wav; sourceTree = "<group>"; };
 		D89CBCBA2AA50A3B006A6FA1 /* Duck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Duck.wav; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		D8E0696A2A78206700A150B7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D890C2BB2B2F7F2F00C45950 /* OnboardingView.swift */,
 				D873C2B72A843E2800E30935 /* AnimalCatalog */,
 				D88C79AE2AFEBFD2003CE7AC /* Map */,
 			);
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D890C2BC2B2F7F2F00C45950 /* OnboardingView.swift in Sources */,
 				D8E0695C2A781D9100A150B7 /* AnimalCatalogView.swift in Sources */,
 				D8E069692A781E0F00A150B7 /* AnimalModel .swift in Sources */,
 				D8E0695A2A781D9100A150B7 /* AnimalWorldApp.swift in Sources */,

@@ -17,7 +17,8 @@ struct AnimalWorldApp: App {
             let soundServise = AnimalSoundEffectService()
             let animalsViewModel = AnimalsViewModel(dataService: dataService,
                                                     animalSoundService: soundServise)
-            AnimalCatalogView().environmentObject(animalsViewModel)
+            OnboardingView()
+//            AnimalCatalogView().environmentObject(animalsViewModel)
             
 //            ContentView()
         }
