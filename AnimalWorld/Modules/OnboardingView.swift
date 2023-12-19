@@ -13,7 +13,12 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
-            Color.mint
+            LinearGradient(
+                colors: [.orange, .red],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
             VStack {
                 Spacer()
                 Text("Welcodsme to Your App")
@@ -32,9 +37,7 @@ struct OnboardingView: View {
                     .scaleEffect(scale)
                     .opacity(opacity)
                     .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
-                
                 Spacer()
-                
                 // Next button
                 Button(action: {
                     // Add your navigation logic here to move to the next onboarding screen or the main app
