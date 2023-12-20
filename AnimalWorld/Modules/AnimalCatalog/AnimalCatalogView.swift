@@ -11,6 +11,8 @@ struct AnimalCatalogView: View {
     
     @EnvironmentObject var animalsViewModel: AnimalsViewModel
     let colomns = [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)]
+    @State private var scale: CGFloat = 1.0
+    @State private var opacity: Double = 0.0
     
     var body: some View {
         GeometryReader { geo in
@@ -45,6 +47,10 @@ struct AnimalCatalogView: View {
         .foregroundStyle(Color("ButtonsColor"))
         .onAppear {
             animalsViewModel.fetchData()
+            withAnimation {
+                self.scale = 1.2
+                self.opacity = 1.0
+            }
         }
     }
 }

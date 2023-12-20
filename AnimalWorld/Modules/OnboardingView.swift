@@ -37,7 +37,6 @@ struct OnboardingView: View {
                 
                 LottieView(loopMode: .loop)
                 Spacer()
-                // Next button
                 Button {
                     isOnboarding = false
                 } label: {
@@ -57,7 +56,6 @@ struct OnboardingView: View {
             }
         }
         .onAppear {
-            // Animation when the view appears
             withAnimation {
                 self.scale = 1.2
                 self.opacity = 1.0

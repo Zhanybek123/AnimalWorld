@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AVFAudio
 
 @main
 struct AnimalWorldApp: App {
@@ -17,14 +16,18 @@ struct AnimalWorldApp: App {
         WindowGroup {
             if isOnboarding {
                 OnboardingView()
+                    .onDisappear {
+                        // Set isOnboarding to false when onboarding view is dismissed
+                        isOnboarding = false
+                    }
             } else {
                 let dataService = AnimalsDataService()
-                let soundServise = AnimalSoundEffectService()
-                let animalsViewModel: AnimalsViewModel = AnimalsViewModel(dataService: dataService,animalSoundService: soundServise)
-                AnimalCatalogView().environmentObject(animalsViewModel)
+                let soundService = AnimalSoundEffectService()
+                let animalsViewModel = AnimalsViewModel(dataService: dataService, animalSoundService: soundService)
+                
+                AnimalCatalogView()
+                    .environmentObject(animalsViewModel)
             }
-            
         }
-        
     }
 }
