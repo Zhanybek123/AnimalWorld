@@ -15,12 +15,10 @@ struct AnimalWorldApp: App {
         WindowGroup {
             let dataService = AnimalsDataService()
             let soundServise = AnimalSoundEffectService()
-            let animalsViewModel = AnimalsViewModel(dataService: dataService,
-                                                    animalSoundService: soundServise)
-            OnboardingView()
-//            AnimalCatalogView().environmentObject(animalsViewModel)
-            
-//            ContentView()
+            let animalsViewModel: AnimalsViewModel = {
+                AnimalsViewModel(dataService: dataService, animalSoundService: soundServise)
+            }()
+            OnboardingView().environmentObject(animalsViewModel)
         }
     }
 }

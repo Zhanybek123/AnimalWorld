@@ -6,61 +6,81 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct OnboardingView: View {
+    
+    @EnvironmentObject var animalsViewModel: AnimalsViewModel
+    
     @State private var scale: CGFloat = 1.0
     @State private var opacity: Double = 0.0
     
     var body: some View {
-        ZStack {
-            LinearGradient(
-                colors: [.orange, .red],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
-            VStack {
-                Spacer()
-                Text("Welcodsme to Your App")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-                    .padding()
-                
-                Text("Discover amazing features and more!")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .padding(.bottom, 50)
-                
-                Image(systemName: "star.fill")
-                    .font(.system(size: 100))
-                    .scaleEffect(scale)
-                    .opacity(opacity)
-                    .animation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true))
-                Spacer()
-                // Next button
-                Button(action: {
-                    // Add your navigation logic here to move to the next onboarding screen or the main app
-                }) {
-                    Text("Get Started")
-                        .font(.headline)
-                        .foregroundColor(.white)
+        NavigationStack {
+            ZStack {
+                LinearGradient(
+                    colors: [.orange, .red],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    Text("Welcome to Animals World")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
                         .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(12)
+                    
+                    Text("Discover amazing animals!")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 50)
+                    
+                    LottieView(loopMode: .loop)
+                    Spacer()
+                    // Next button
+                    NavigationLink(destination: AnimalCatalogView().environmentObject(animalsViewModel)) {
+                            Text("Get Started")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.blue)
+                                .cornerRadius(12)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.brown, lineWidth: 5)
+                                )
+                        }
+                        .padding()
                 }
-                .padding()
+            }
+            .onAppear {
+                // Animation when the view appears
+                withAnimation {
+                    self.scale = 1.2
+                    self.opacity = 1.0
+                }
             }
         }
+    }
+}
+
+
+struct LottieView: UIViewRepresentable {
+    let loopMode: LottieLoopMode
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
         
-        .onAppear {
-            // Animation when the view appears
-            withAnimation {
-                self.scale = 1.2
-                self.opacity = 1.0
-            }
-        }
+    }
+    
+    func makeUIView(context: Context) -> Lottie.LottieAnimationView {
+        let animationView = LottieAnimationView(name: "baby-elephant")
+        animationView.play()
+        animationView.loopMode = loopMode
+        animationView.contentMode = .scaleAspectFit
+        return animationView
     }
 }
 
