@@ -10,62 +10,62 @@ import Lottie
 
 struct OnboardingView: View {
     
-    @EnvironmentObject var animalsViewModel: AnimalsViewModel
-    
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     @State private var scale: CGFloat = 1.0
     @State private var opacity: Double = 0.0
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                LinearGradient(
-                    colors: [.orange, .red],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .ignoresSafeArea()
-                VStack {
-                    Spacer()
-                    Text("Welcome to Animals World")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.primary)
+        ZStack {
+            LinearGradient(
+                colors: [.orange, .red],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Text("Welcome to Animals World")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+                    .padding()
+                
+                Text("Discover amazing animals!")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .padding(.bottom, 50)
+                
+                LottieView(loopMode: .loop)
+                Spacer()
+                // Next button
+                Button {
+                    isOnboarding = false
+                } label: {
+                    Text("Get Started")
+                        .font(.headline)
+                        .foregroundColor(.white)
                         .padding()
-                    
-                    Text("Discover amazing animals!")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .padding(.bottom, 50)
-                    
-                    LottieView(loopMode: .loop)
-                    Spacer()
-                    // Next button
-                    NavigationLink(destination: AnimalCatalogView().environmentObject(animalsViewModel)) {
-                            Text("Get Started")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.blue)
-                                .cornerRadius(12)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.brown, lineWidth: 5)
-                                )
-                        }
-                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(12)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.brown, lineWidth: 5)
+                        )
                 }
+                .padding()
             }
-            .onAppear {
-                // Animation when the view appears
-                withAnimation {
-                    self.scale = 1.2
-                    self.opacity = 1.0
-                }
+        }
+        .onAppear {
+            // Animation when the view appears
+            withAnimation {
+                self.scale = 1.2
+                self.opacity = 1.0
             }
         }
     }
 }
+
 
 
 struct LottieView: UIViewRepresentable {
