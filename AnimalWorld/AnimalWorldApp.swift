@@ -17,7 +17,6 @@ struct AnimalWorldApp: App {
             if isOnboarding {
                 OnboardingView()
                     .onDisappear {
-                        // Set isOnboarding to false when onboarding view is dismissed
                         isOnboarding = false
                     }
             } else {

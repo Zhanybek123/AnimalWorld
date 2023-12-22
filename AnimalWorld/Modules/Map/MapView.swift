@@ -48,7 +48,6 @@ struct MapView: UIViewRepresentable {
         }
         
         view.addAnnotation(animalLandmark)
-        
         view.delegate = context.coordinator
     }
     
