@@ -47,10 +47,10 @@ struct AnimalCatalogView: View {
         .foregroundStyle(Color("ButtonsColor"))
         .onAppear {
             animalsViewModel.fetchData()
-            withAnimation {
-                self.scale = 1.2
-                self.opacity = 1.0
-            }
+//            withAnimation {
+//                self.scale = 1.2
+//                self.opacity = 1.0
+//            }
         }
     }
 }
