@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct AnimalWorldApp: App {
-    
+    	
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     var body: some Scene {

@@ -66,53 +66,6 @@
             endingLineNumber = "21"
             landmarkName = "fetchData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "79FF8154-5E0C-4544-B87C-711DCF6FA8A7 - 2e903e556680308"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AnimalWorld.AnimalsViewModel.fetchData() -&gt; ()"
-                  moduleName = "AnimalWorld"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanybeksalgarin/Desktop/AnimalWorld/AnimalWorld/AnimalWorld/AnimalsViewModel/AnimalsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "79FF8154-5E0C-4544-B87C-711DCF6FA8A7 - ad6d782952d8f0ee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in AnimalWorld.AnimalsViewModel.fetchData() -&gt; ()"
-                  moduleName = "AnimalWorld"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanybeksalgarin/Desktop/AnimalWorld/AnimalWorld/AnimalWorld/AnimalsViewModel/AnimalsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "79FF8154-5E0C-4544-B87C-711DCF6FA8A7 - 96677741bc4f4f0a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AnimalWorld.AnimalsViewModel.fetchData() -&gt; ()"
-                  moduleName = "AnimalWorld"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanybeksalgarin/Desktop/AnimalWorld/AnimalWorld/AnimalWorld/AnimalsViewModel/AnimalsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
